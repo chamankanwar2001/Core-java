@@ -1,0 +1,1030 @@
+Question 1: Tax Calculator
+Write a Java program that calculates income tax for individuals based on the following criteria:
+
+Income <= $10,000: No tax
+$10,001 - $30,000: 10% tax
+$30,001 - $50,000: 20% tax
+Income > $50,000: 30% tax
+
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter income :");
+        int income = sc.nextInt();
+
+        if(income<=10000){
+            System.out.println("not Tax");
+        }
+        else if ( income > 10001 && income <30000){
+            System.out.println(income + " - 10% Tax is :"+income * 0.1);
+
+        }
+        else if(income > 30001 && income <50000){
+            System.out.println(income + " - 20% Tax is :"+income * 0.2);
+        }
+        else if(income > 50001 ){
+            System.out.println(income + " - 30% Tax is :"+income * 0.3);
+        }
+    }
+}
+
+Question 2: BMI Calculator
+Create a program that calculates the Body Mass Index (BMI) based on a person's weight and height. Categorize the BMI using the following ranges:
+
+BMI < 18.5: Underweight
+18.5 <= BMI < 24.9: Normal weight
+25 <= BMI < 29.9: Overweight
+BMI >= 30: Obesity
+
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter height");
+        double height = sc.nextDouble();
+
+        System.out.println("Enter Weight :");
+        double Weight = sc.nextDouble();
+
+        double bmi = Weight/(height*height);
+
+        if(bmi < 18.5){
+            System.out.println("Underweight");
+        }
+        else if( bmi>18.5 || bmi < 24.9){
+            System.out.println("Normal weight");
+        }
+        else if(bmi>25 || bmi < 29.9){
+            System.out.println("Overweight");
+        }else if (bmi > 30){
+            System.out.println("Obesity");
+
+        }
+
+    }
+}
+
+
+Question 3: Leap Year Checker
+Write a Java program that checks if a given year is a leap year or not. Leap years are divisible by 4, but years divisible by 100 are not leap years unless they are also divisible by 400.
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter income :");
+        int year = sc.nextInt();
+
+        if(year %4 == 0){
+            if(year % 100 == 0){
+                if(year %400 == 0){
+                    System.out.println("Leap Year" + year);
+                }
+                else{
+                    System.out.println("not a Leap Year");
+                }
+            }
+            else {
+                System.out.println("not a leap Year");
+            }
+        }
+        else {
+            System.out.println("not a leap Year");
+        }
+    }
+}
+
+
+
+Question 4: Time of Day Greeting
+Create a program that asks for the time of day (morning, afternoon, evening) and then greets the user accordingly. For example, "Good morning!" if the time is morning.
+
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter Time in 24 formate :");
+        int time = sc.nextInt();
+
+        if(time >= 1 && time <= 11.59){
+            System.out.println("Good morning!");
+        }
+        else if (time >= 12 && time <= 16){
+            System.out.println("Good Afternoon");
+        }
+        else if (time >= 16.01 && time <= 24){
+            System.out.println("good evening");
+        }
+
+    }
+}
+
+
+
+Question 5: Menu Selection
+Design a simple restaurant menu system that takes a customer's choice (1-3) and displays the selected food item and its price. Use if-else if-else statements.
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter Manu Number :");
+        int manu = sc.nextInt();
+
+        if( manu == 1 ){
+            
+            System.out.println("Pizza" + "- 400rs ");
+            System.out.println("Burger" + "- 100rs ");
+        }
+        else if (manu == 2){
+            System.out.println(" mater paneer" + "- 150rs ");
+            System.out.println("Sahi Paneer" + "- 200rs ");
+
+        }
+        else if (manu == 3 ){
+            System.out.println("Kaju Katli" + "- 550rs ");
+            System.out.println("Gulab Jamun" + "- 100rs ");
+        }
+        else {
+            System.out.println("not a manu number");
+        }
+    }
+}
+
+
+Question 6: 
+Write a Java program to convert temperatures between Celsius and Fahrenheit. The program should ask the user for the input temperature and the unit (C or F) and provide the converted temperature.
+
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter Manu temperature C & f :");
+        char temp = sc.next().charAt(0);
+6yyy
+
+        if(temp == 'c'){
+            
+
+            System.out.println("Enter Manu temperature f  :");
+            int f = sc.nextInt();
+
+            int c = (f - 32) * 5/9;
+
+            System.out.println("Celsius" + c);
+
+        }
+
+        else if (temp == 'f'){
+            System.out.println("Enter Manu temperature C  :");
+            int c = sc.nextInt();
+
+            int f = (c * 9 / 5) + 32;
+
+            System.out.println("Fahrenheit " + f );
+        }
+        
+    }
+}
+
+
+Question 7: Number Comparison
+Create a program that takes two numbers as input and uses if-else if-else statements to determine and print which number is greater or if they are equal.
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter first Number :");
+        int a = sc.nextInt();
+
+        System.out.println("Enter 2nd Number :");
+        int b = sc.nextInt();
+
+        if (a>b){
+            System.out.println("a is Greater");
+        }
+        else if (b>a){
+            System.out.println("b is greater");
+        }
+        else if (a <= b ){
+            System.out.println("a and b both are aqual");
+
+        }
+
+        
+    }
+}
+
+
+Question 8: Ticket Booking System
+Design a ticket booking system for a cinema that calculates the ticket price based on the age of the customer. Children (age < 12) get a 50% discount, while seniors (age >= 65) get a 30% discount.
+
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter Ticket Price Number :");
+        int ticketprice = sc.nextInt();
+
+        System.out.println("Enter age  Number :");
+        int age = sc.nextInt();
+
+        if (age < 12 ){
+            System.out.println("Discount for child :"+ ticketprice * 0.50);
+        }
+        else if (age > 12 && age <= 65 ){
+            System.out.println("not Discount for younger:"+ ticketprice);
+        }
+
+        else if (age >= 65 ){
+            System.out.println("Discount for old person :"+ ticketprice * 0.30);
+        }
+
+        
+    }
+}`
+
+Question 9: Letter Grade Calculator
+Write a program that accepts a student's score as input and calculates their letter grade using if-else if-else statements. Consider the standard letter grading system (A, B, C, D, F).
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter score :");
+        int score = sc.nextInt();
+
+        if (score <= 40){
+            System.out.println("d Grade");
+        }
+        
+        else if (score > 41 && score < 50){
+            System.out.println("c Grade");
+        }
+
+        else if ( score > 51 && score < 60 ){
+            System.out.println("b grade");
+        }
+        else if ( score >= 60 && score < 80 ){
+            System.out.println("A grade");
+        }
+        else if ( score >= 80  ){
+            System.out.println("A+ grade");
+        }
+
+       
+        
+    }
+}
+
+
+Question 10: Vowel or Consonant Checker
+Create a program that takes a single alphabet character as input and checks if it is a vowel (A, E, I, O, U) or a consonant.
+
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter charater :");
+        char ch = sc.next().charAt(0);
+
+
+        if( ch == 'a' || ch =='e' || ch == 'i' || ch == 'o' || ch == 'u'){
+            System.out.println("vowel");
+        }
+        else {
+            System.out.println("consonant");
+        }
+
+
+       
+        
+    }
+}
+============================================
+3 april
+Basic while loop: 
+
+1)1---->100 
+
+public class chaman {
+    public static void main(String[] args)  {
+
+        int a=1;
+        while (a<=100){
+            System.out.println(a);
+            a++;
+        }
+    }
+}
+
+---------------------------------------
+2)100--->1 
+
+public class chaman{
+    public static void main(String[] args)  {
+
+        int a=100;
+        while (a>=1){
+            System.out.println(a);
+            a--;
+        }
+    }
+}
+
+-----------------------------------------
+3)1---->100 even numbers print 
+
+public class chaman{
+    public static void main(String[] args)  {
+
+        int a=1;
+        while (a<=100){
+            if (a%2==0){
+            System.out.println(a);}
+            a++;
+        }
+    }
+}
+
+--------------------------------------------
+4) 100--->1 even number 
+
+public class chaman{
+    public static void main(String[] args)  {
+
+        int a=100;
+        while (a>=1){
+            if (a%2==0){
+            System.out.println(a);}
+            a--;
+        }
+    }
+}
+
+-------------------------------------------------
+5)1---->100 odd numbers 
+
+public class chaman{
+    public static void main(String[] args)  {
+
+        int a=1;
+        while (a<=100){
+            if (a%2==1){
+            System.out.println(a);}
+            a++;
+        }
+    }
+}
+
+--------------------------------------------------
+6)50---->500 number print 
+
+public class chaman{
+    public static void main(String[] args)  {
+
+        int a=50;
+        while (a<=500){
+            {
+            System.out.println(a);}
+            a++;
+        }
+    }
+}
+
+-----------------------------------------
+7)500--->50 number print 
+
+public class chaman{
+    public static void main(String[] args)  {
+
+        int a=500;
+        while (a>=50){
+            {
+            System.out.println(a);}
+            a--;
+        }
+    }
+}
+
+------------------------------------------------
+8)50--->1000 even number 
+
+public class chaman{
+    public static void main(String[] args)  {
+
+        int a=50;
+        while (a<=1000){
+            { if (a%2==0)
+            System.out.println(a);}
+            a++;
+        }
+    }
+}
+
+--------------------------------------------------
+9)user input 
+34-----67
+
+import java.util.Scanner;
+
+public class chaman{
+    public static void main(String[] args)  {
+Scanner ac =new Scanner(System.in);
+        System.out.println("enter 1st number :");
+        int a= ac.nextInt();
+        System.out.println("1st number is :"+a);
+        System.out.println("enter 2nd number :");
+        int b=ac.nextInt();
+        System.out.println("2nd number is :"+b);
+        while (a<=b){
+            System.out.println(a);
+            a++;
+        }
+    }
+}
+
+------------------------------------------------------
+10) random two 34-->67
+even number 
+
+
+import java.util.Scanner;
+
+public class chaman{
+    public static void main(String[] args) {
+        Scanner ac = new Scanner(System.in);
+        System.out.println("enter 1st number :");
+        int a = ac.nextInt();
+        System.out.println("1st number is :" + a);
+        System.out.println("enter 2nd number :");
+        int b = ac.nextInt();
+        System.out.println("2nd number is :" + b);
+        while (a <= b){
+            if (a % 2 == 0) {
+                System.out.println(a);
+            }
+        a++;
+    }
+    }
+}
+
+
+-----------------------------------------
+11) random two 34-->67
+oddd number 
+
+import java.util.Scanner;
+
+public class chaman{
+    public static void main(String[] args) {
+        Scanner ac = new Scanner(System.in);
+        System.out.println("enter 1st number :");
+        int a = ac.nextInt();
+        System.out.println("1st number is :" + a);
+        System.out.println("enter 2nd number :");
+        int b = ac.nextInt();
+        System.out.println("2nd number is :" + b);
+        while (a <= b){
+            if (a % 2 == 1) {
+                System.out.println(a);
+            }
+        a++;
+    }
+    }
+}
+
+---------------------------------------------
+12)1--->10 sum (addition) 
+
+public class chaman{
+    public static void main(String[] args){
+        int a = 1;
+        int sum = 0;
+
+
+        while (a<=10){
+            System.out.println(a);
+
+            sum = sum+a;
+
+            a++;
+
+        }
+
+        System.out.println("Total :" + sum);
+
+
+
+
+    }
+}
+
+
+
+-----------------------------------------------------------
+13)2 table print 
+
+public class chaman{
+    public static void main(String[] args){
+        int a = 2;
+        int b = 1;
+
+        while (b<=10){
+
+                System.out.println(a*b);
+            b++;
+            }
+
+
+        }
+
+    }
+
+------------------------------------------- 
+14)user input table 
+
+import java.util.Scanner;
+
+public class chaman{
+    public static void main(String[] args) {
+        Scanner ac = new Scanner(System.in);
+        System.out.println("enter 1st number :");
+        int a = ac.nextInt();
+        int b=1;
+        while (b<=10 ){
+            System.out.println(a*b);
+            b++;
+        }
+    }
+}
+
+
+--------------------------------------------------
+15)2 3 4 5 6 7 8 9 10 table print (nested while)
+type2: 
+5 ----9 table 
+
+
+----------------------------------------------
+3 april while loop advance 
+==============================================
+
+while : 
+reverse number 
+657
+756 
+
+public class Main{
+    public static void main(String[] args){
+
+        int num = 657;
+        int rem,sum = 0;
+
+        while(num>0){
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        }
+
+        System.out.println(sum);
+
+    }
+}
+
+pallindrome number 
+12321 
+
+
+public class Main{
+    public static void main(String[] args){
+
+        int num = 12321;
+        int sum=0;
+        int rem=0;
+        int temp = num;
+
+        while(num>0){
+            rem=num%10;
+            sum = sum *10+rem;
+            num = num/10;
+        }
+
+        System.out.println(sum);
+
+        if(temp  == sum){
+            System.out.println("pallindrome number ");
+        }
+        else {
+            System.out.println("not pallindrome number ");
+        }
+
+    }
+}
+
+
+-------------
+armstrong number 
+153 
+
+
+public class Main{
+    public static void main(String[] args){
+
+        int num = 153;
+        int sum = 0;
+        int rem = 0;
+        int temp = num;
+
+        while(num >0){
+            rem = num%10;
+            sum = sum + rem*rem*rem;
+            num = num/10;
+        }
+
+        System.out.println(sum);
+
+        if(temp==sum){
+            System.out.println("armstrong number");
+        }
+        else {
+            System.out.println("Not a armstrong number");
+        }
+
+    }
+}
+----------
+neon number 
+9 ka square 
+81 => 8+1=(9)
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter a Number");
+        int num = dc.nextInt();
+
+        int sq=num*num;
+        int rem,sum = 0;
+
+        while(sq > 0){
+            rem = sq%10;
+            sum = sum + rem;
+            sq = sq/10;
+            
+        }
+
+        if(sum == num){
+            System.out.println(num + "is a perfect number");
+        }
+        else {
+            System.out.println(num +" is not perfect number");
+        }
+
+        
+    }
+
+}
+
+------------------
+prime number
+a)check number prime 
+
+public class Main{
+    public static void main(String[] args){
+        int a =7;
+        int i =2;
+
+        while(a>=i){
+            if(a%i==0){
+                break;
+            }
+            if(i==a-1){
+                System.out.println("Prime Number");
+            }
+            i++;
+        }
+    }
+}
+
+b)1--->100 prime number 
+
+public class Main{
+    public static void main(String[] args){
+        //System.out.println("enter a number ");
+        int a = 2;
+
+        for(int i=2;i<=100;i++){
+            for(a=2;a<=100;a++){
+                if(i%a==0){
+                    break;
+                }
+
+            }
+            if(a==i){
+                System.out.println(i);
+            }
+        }
+
+
+    }
+}
+
+
+-------------------------
+factorial 
+5 
+1*2*3*4*5
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		int fact =1;
+        int num = 4;
+        int i;
+
+        for(i=1;i<=num;i++){
+            fact = fact*i;
+            
+        }
+        System.out.println("fact number is :"+fact);
+
+	}
+}
+-------------------------------------------
+fibonacci series 
+0 1 1 2 3 5 
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		int n1=0;
+        int n2=1;
+        int n3;
+        for(int i=1;i<=5;i++){
+
+            n3=n1+n2;
+            n1=n2;
+            n2=n3;
+            System.out.println(n3);
+        }
+       
+	}
+}
+--------------------------------------
+use input :6743 =>4 digit 
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter a number :");
+        int num = dc.nextInt();
+
+		int count=0;
+        while(num>0){
+            count++;
+            num=num/10;
+        }
+        System.out.println(count);
+       
+	}
+}
+
+--------------------------------------
+user : 342 => 354 
+-------------------------------------
+user: 342 =>453 
+----------------------------------
+
+even number 
+type1 : 1-->100 
+type2 : 1--->100 even number ka sum 
+type3 : random value 34--->89 =>even number 
+type4 : randome value k sabi ka sum aa jaye 
+
+odd number 
+type1: 1-->100 odd numbers 
+type2: 1--100 odd number ka sum 
+type3 : random value 34--->89 =>odd number 
+type4 : randome value k sabi ka sum aa jaye
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter even/odd :");
+        String key = dc.nextLine();
+
+        if(key.equals("even")){
+            System.out.println("Enter Type number :");
+            int type = dc.nextInt();
+
+            if(type == 1){
+                for(int i = 1 ; i<=100;i++){
+                    if(i%2==0){
+                        System.out.println(i);
+                    }
+                }
+            }
+            
+            else if(type == 2){
+                int sum=0;
+                for(int i = 1 ; i<=100;i++){
+                    if(i%2==0){
+                        System.out.println(i);
+                        sum=sum+i;
+                    }
+
+                }
+                System.out.println("Total sum is :"+sum);
+            }
+            
+            else if(type == 3){
+                System.out.println("enter sp :");
+                int sp =dc.nextInt();
+
+                System.out.println("enter ep :");
+                int ep =dc.nextInt();
+
+
+                for(int i=sp;i<=ep;i++){
+                    if(sp%2==0){
+                        System.out.println(i);
+                    }
+                    
+                }
+            }
+
+            else if(type == 4){
+                System.out.println("enter sp :");
+                int sp =dc.nextInt();
+
+                System.out.println("enter ep :");
+                int ep =dc.nextInt();
+
+                int sum=0;
+
+
+                for(int i=sp;i<=ep;i++){
+                    if(sp%2==0){
+                        System.out.println(i);
+                        sum=sum+i;
+
+                    }
+                    
+                    
+                }
+                System.out.println("Total sum is :"+sum);
+                
+            }
+
+            }
+
+
+        else if (key.equals("odd")){
+            System.out.println("Enter Type number :");
+            int type = dc.nextInt();
+
+            if( type == 1){
+                for(int i =1 ; i <=100; i++){
+                    System.out.println(i);
+                }
+            }
+            else if (type == 2 ){
+                int sum=0;
+                for(int i =1 ; i<= 100; i++){
+                    if(i%2!= 0){
+                        System.out.println(i);
+                        sum =sum+i;
+
+                    }
+                    
+                    
+                }
+                System.out.println("Total value :"+sum);
+            }
+        }
+
+        }
+	}
+ 
+
+----------------------------------------------------------------------------------------------
+perfect number : 
+6 
+1 2 3 
+1 + 2 + 3 => 6 
+
+8 
+2 2 2 =>6 not perfect number 
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter a Number");
+        int num = dc.nextInt();
+
+        int sum = 0;
+
+        if(num>0){
+            for(int i=1; i<num ;i++){
+                if(num%i==0){
+                    sum=sum+i;
+                }
+                
+            }
+        }
+
+        if(sum == num){
+            System.out.println(num + "is a perfect number");
+        }
+        else{
+            System.out.println(num + "is not a perfect number ");
+        }
+
+    }
+
+}
+
+--------------------------------------------------------------------------------------------
+neon number : 
+
+9 =>81 
+8+1 =>9 
+
+9 is neon number
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter a Number");
+        int num = dc.nextInt();
+
+        int sq=num*num;
+        int rem,sum = 0;
+
+        while(sq > 0){
+            rem = sq%10;
+            sum = sum + rem;
+            sq = sq/10;
+            
+        }
+
+        if(sum == num){
+            System.out.println(num + "is a perfect number");
+        }
+        else {
+            System.out.println(num +" is not perfect number");
+        }
+
+        
+    }
+
+}
+

@@ -1,0 +1,935 @@
+1)
+five country name
+
+public class Main{
+    public static void main(String[] args){
+        System.out.print("india");
+        System.out.println("bangladesh");
+        System.out.println("canada");
+        System.out.println("france");
+        System.out.println("shrilanka");
+    }
+}
+ 
+
+2)
+five state name 
+
+public class Main{
+    public static void main(String[] args){
+        System.out.println("rajasthan");
+        System.out.println("bihar");
+        System.out.println("goa");
+        System.out.println("andhra pradesh");
+        System.out.println("kanataka");
+    }
+}
+
+3)five fav food name 
+
+public class Main{
+    public static void main(String[] args){
+        System.out.println("sandwich");
+        System.out.println("salad");
+        System.out.println("rice");
+        System.out.println("fastfood");
+        System.out.println("bread");
+    }
+}
+
+
+4)fiv family name 
+
+public class Main{
+    public static void main(String[] args){
+        System.out.println("raghuveer");
+        System.out.println("rekha");
+        System.out.println("chaman");
+        System.out.println("prashant");
+        System.out.println("bhawani");
+    }
+}
+
+5)fiv fruit name 
+
+public class Main{
+    public static void main(String[] args){
+        System.out.println("banana");
+        System.out.println("apple");
+        System.out.println("kiwi");
+        System.out.println("mango");
+        System.out.println("cherry");
+    }
+}
+
+30 march 
+not assignments
+===========================================
+1 april
+
+
+short 
+byte 
+int 
+long 
+double 
+float 
+char
+boolean 
+
+
+public class Star {
+    public static void main(String[] args) {
+        short s = 10;
+        byte b = 20;
+        int i = 30;
+        long l = 40L;
+        double d = 50.5;
+        float f = 60.6f;
+        char c = 'A';
+        boolean bool = true;
+        
+        System.out.println("Short: " + s);
+        System.out.println("Byte: " + b);
+        System.out.println("Int: " + i);
+        System.out.println("Long: " + l);
+        System.out.println("Double: " + d);
+        System.out.println("Float: " + f);
+        System.out.println("Char: " + c);
+        System.out.println("Boolean: " + bool);
+    }
+    
+}
+
+one one example 
+67 
+o
+-9.8
+-3
+92
+-8.9
+
+public class Main {
+    public static void main(String[] args) {
+        short s = 10;
+        byte b = 20;
+        int i = 30;
+        long l = 40L;
+        double d = 50.5;
+        float f = 60.6f;
+        char c = 'A';
+        boolean bool = true;
+        
+        System.out.println("Short: " + s);
+        System.out.println("Byte: " + b);
+        System.out.println("Int: " + i);
+        System.out.println("Long: " + l);
+        System.out.println("Double: " + d);
+        System.out.println("Float: " + f);
+        System.out.println("Char: " + c);
+        System.out.println("Boolean: " + bool);
+    }
+}
+----------------------------------------------------------------
+2+2 
+
+43-5
+
+42/2 
+
+56*3
+
+
+public class Main {
+    public static void main(String[] args) {
+        int result1 = 2 + 2;
+        int result2 = 43 - 5;
+        int result3 = 42 / 2;
+        int result4 = 56 * 3;
+        
+        System.out.println("2 + 2 = " + result1);
+        System.out.println("43 - 5 = " + result2);
+        System.out.println("42 / 2 = " + result3);
+        System.out.println("56 * 3 = " + result4);
+    }
+}
+
+
+---------------------------------------------------------------
+34+67+3+89+12
+
+public class first {
+    
+        public static void main(String[] args) {
+            int result = 34 + 67 + 3 + 89 + 12;
+            System.out.println("34 + 67 + 3 + 89 + 12 = " + result);
+        }
+    }
+---------------------------------------------------------------
+34+(4*4)-8 
+
+public class second {
+    public static void main(String[] args) {
+        int result = 34 + (4 * 4) - 8;
+        System.out.println("34 + (4 * 4) - 8 = " + result);
+    }
+}
+---------------------------------------------------------------
+3.1*6.7-(2.2*2.2)-5.4
+
+public class third {
+    public static void main(String[] args) {
+        double result = 3.1 * 6.7 - (2.2 * 2.2) - 5.4;
+        System.out.println("3.1 * 6.7 - (2.2 * 2.2) - 5.4 = " + result);
+    }
+    
+}
+----------------------
+-----------------------------------------
+2.3-7+(3.4*6)-2.3/2
+
+public class my {
+    public static void main(String[] args) {
+        double result = 2.3 - 7 + (3.4 * 6) - 2.3 / 2;
+        System.out.println("2.3 - 7 + (3.4 * 6) - 2.3 / 2 = " + result);
+    }
+    
+	
+} 
+---------------------------------------------------------------
+23*2-9+34
+
+public class Tata {
+    public static void main(String[] args) {
+        int result = 23 * 2 - 9 + 34;
+        System.out.println("23 * 2 - 9 + 34 = " + result);
+    }
+    
+}
+---------------------------------------------------------------
+ 4.5*7+(2.3-2)+34.6 
+ 
+  public class Fourth {
+    public static void main(String[] args) {
+        double result = 4.5 * 7 + (2.3 - 2) + 34.6;
+        System.out.println("4.5 * 7 + (2.3 - 2) + 34.6 = " + result);
+    }
+    
+}
+--------------------------------------------------------------- 
+swap number with third variable 
+
+public class Swap {
+    public static void main(String[]args){
+        int a=22;
+        int b=44;
+        int c;
+        System.out.println("the real value of a is:" +a);
+        System.out.println("the real value of b is:" +b);
+        c=a;
+        a=b;
+        b=c;
+        System.out.println("the swap value of a is:" +a);
+        System.out.println("the swap value of b is:" +b);
+
+
+    }
+    
+}
+
+--------------------------------------------------------------- 
+swap number without third variable 
+
+public class Swap {
+    public static void main(String[]args){
+        int a=77;
+        int b=66;
+        System.out.println("the real value of a is:" +a);
+        System.out.println("the real value of b is:" +b);
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("the swap value of a is:" +a);
+        System.out.println("the swap value of b is:" +b);
+
+
+    }
+    
+}
+==============================
+2 april 
+==============================
+
+user input :
+
+short 
+byte 
+int 
+long 
+double 
+float 
+char
+boolean 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of short ");
+        short a = sc.nextShort();
+        System.out.println("the value of short is :" + a);
+        System.out.println("enter the value of byte");
+        byte b = sc.nextByte();
+        System.out.println(" the value of byte is : " +b);
+        System.out.println(" enter the value of int ");
+        int c = sc.nextInt();
+        System.out.println( " the  value of int is :" +c);
+        System.out.println("enter the value of long :");
+        long d = sc.nextLong();
+        System.out.println( "the value of long  is :"+d);
+        System.out.println( "enter the value of double :");
+        double e = sc.nextDouble();
+        System.out.println(" the value of double is " +e);
+        System.out.println("enter the value of float");
+        float f = sc.nextFloat();
+        System.out.println("the value of float is  "+f);
+        System.out.println(" enter the value of char :");
+        char g = sc.next().charAt(0);
+        System.out.println( "the value of char is "+g);
+        System.out.println("enter the value of boolean :");
+        boolean h = sc.nextBoolean();
+        System.out.println("the value of boolean is "+h);
+
+
+
+    }
+}
+
+
+
+one one example 
+67 
+o
+-9.8
+-3
+92
+-8.9
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a = sc.nextInt();
+        System.out.println("the value of a is :" + a);
+        System.out.println("enter the value of byte");
+        char b = sc.next().charAt(0);
+        System.out.println(" the value of b is : " +b);
+        System.out.println(" enter the value of c ");
+        float c = sc.nextFloat();
+        System.out.println( " the  value of c is :" +c);
+        System.out.println("enter the value of d :");
+        int d = sc.nextInt();
+        System.out.println( "the value of d  is :"+d);
+        System.out.println( "enter the value of e :");
+        int e = sc.nextInt();
+        System.out.println(" the value of e is " +e);
+        System.out.println("enter the value of f");
+        float f = sc.nextFloat();
+        System.out.println("the value of f is  "+f);
+        
+
+
+
+    }
+}
+
+
+
+---------------------------------------------------------------
+2+2 
+
+43-5
+
+42/2 
+
+56*3
+
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter the value of a and b:");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println(" the sum of a and b is:" +(a+b));
+        System.out.println("enter the value of c and d:");
+        int c=sc.nextInt();
+        int d=sc.nextInt();
+        System.out.println(" the subs of a and b is:"+ (c-d));
+        System.out.println("enter the value of e and f:");
+        int e=sc.nextInt();
+        int f=sc.nextInt();
+        System.out.println(" the div. of a and b is:"+  (e/f));
+        System.out.println("enter the value of w and q is:");
+        int w=sc.nextInt();
+        int q=sc.nextInt();
+
+        System.out.println(" the multiple of w and q is:"+  (w*q));
+
+    }
+}
+ 
+
+---------------------------------------------------------------
+34+(4*4)-8 
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter the value :");
+        int a= sc.nextInt();
+        int b= sc.nextInt();
+        int c= sc.nextInt();
+        int d= sc.nextInt();
+        System.out.println(" the Operation is "  +(a+(b*c)-d) );
+
+
+
+
+
+    }
+} 
+
+---------------------------------------------------------------
+3.1*6.7-(2.2*2.2)-5.4
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter the value :");
+        float a= sc.nextFloat();
+        float b= sc.nextFloat();
+        float c= sc.nextFloat();
+        float d= sc.nextFloat();
+        float e= sc.nextFloat();
+        System.out.println(" the Operation is "  +(a*b-(c*d)-e) );
+
+
+
+
+
+    }
+}
+
+
+---------------------------------------------------------------
+2.3-7+(3.4*6)-2.3/2 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter the value :");
+        float a= sc.nextFloat();
+        float b= sc.nextFloat();
+        float c= sc.nextFloat();
+        float d= sc.nextFloat();
+        float e= sc.nextFloat();
+        float f= sc.nextFloat();
+        System.out.println(" the Operation is "  +(a-b+(c*d)-e/f) );
+
+
+
+
+
+    }
+}
+
+---------------------------------------------------------------
+23*2-9+34
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter the value :");
+        int a= sc.nextInt();
+        int b= sc.nextInt();
+        int c= sc.nextInt();
+        int d= sc.nextInt();
+
+        System.out.println(" the Operation is "  +(a*b-c+d) );
+
+
+
+
+
+    }
+}
+
+---------------------------------------------------------------
+ 4.5*7+(2.3-2)+34.6 
+ 
+ import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter the value :");
+        float a= sc.nextFloat();
+        float b= sc.nextFloat();
+        float c= sc.nextFloat();
+        float d= sc.nextFloat();
+        float e= sc.nextFloat();
+        
+        System.out.println(" the Operation is "  +(a*b+(c-d)+e) );
+
+
+
+
+
+    }
+} 
+
+---------------------------------------------------------------
+2 april 2nd ,basic if else
+====================================
+1)voter id 
+=>user input
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter the your age  :");
+        int age= sc.nextInt();
+        if  (age <=18 ) 
+        {
+            System.out.println("you are not Eligible for vote");
+        }
+       else
+        {
+            System.out.println("you are Eligible vote")-     
+			
+        }
+    }
+}
+ 
+2)one number max a>10 
+one number : 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter a number :");
+        int a= sc.nextInt();
+        if  (a >=10)
+        {
+            System.out.println("the number is max");
+        }
+       else
+        {
+            System.out.println("not match");
+        }
+
+    }
+}
+
+
+3)two number max a b 
+a ya b dono mey se bda konsa hey 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter two number :");
+        int a= sc.nextInt();
+        int b= sc.nextInt();
+        if  (a >=b)
+        {
+            System.out.println("a is max");
+        }
+       else
+        {
+            System.out.println("b is max");
+        }
+
+    }
+}
+
+---------------
+4)three number max a b c 
+
+tenno mey se konsa badha hey 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter three number :");
+        int a= sc.nextInt();
+        int b= sc.nextInt();
+        int c= sc.nextInt();
+        if  (a>=b)
+        {
+            System.out.println("a is max");
+        }
+        else if (b>=c) {
+            System.out.println("b is max");
+        } else
+        {
+            System.out.println("c is max");
+        }
+
+    }
+}
+
+5)five number max abcde
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter five number :");
+        int a= sc.nextInt();
+        int b= sc.nextInt();
+        int c= sc.nextInt();
+        int d= sc.nextInt();
+        int e= sc.nextInt();
+
+        if  (a>=b)
+        {
+            System.out.println("a is max");
+        }
+        else if (b>=c) {
+            System.out.println("b is max");
+        }
+        else if (c>=d) {
+            System.out.println("c is max");
+        }
+        else if (d>=e) {
+            System.out.println("d is max");
+        }
+        else
+        {
+            System.out.println("e is max");
+        }
+
+    }
+}
+
+
+6) user 
+-9 negative integer 
+5 positive integer 
+0 =zero 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter a number :");
+        int a= sc.nextInt();
+
+        if  (a>0)
+        {
+            System.out.println("Positive value ");
+        }
+        else if (a<0) {
+            System.out.println("Negative value");
+        }
+        else
+        {
+            System.out.println("ZERO");
+        }
+
+    }
+}
+
+
+7) vowel and consonat 
+->a e i o u vowel 
+consonant 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a Character :");
+        char ch= sc.next().charAt(0);
+
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' )
+        {
+            System.out.println("vowel ");
+        }
+        else
+        {
+            System.out.println("consonant");
+        }
+
+    }
+}
+
+
+8)divisible 5 and 11 
+	a)num dono se divide ho jb process ho 
+	b)num kisi se bhi divide ho jb process ho 
+	
+	
+ import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a number :");
+        int a = sc.nextInt();
+        if (a%5==0 || a%11==0)
+        {
+            System.out.println("divide ");
+        }
+        else
+        {
+            System.out.println("not divide");
+        }
+
+    }
+}
+
+9)uper case and lower case input by user 
+A k
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a Character :");
+        char ch= sc.next().charAt(0);
+
+        if (ch >= 'a' && ch <= 'z')
+        {
+            System.out.println(" this is lowercase alphabet");
+        }
+        else
+        {
+            System.out.println(" this is Uppercase alphabet");
+        }
+
+    }
+}
+
+
+10)if the inpute is the integer then check ,check number 7 or 3 k multiple se divisible hey kya 
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner ac = new Scanner(System.in);
+
+        System.out.println("Enter a Number :");
+        int a = ac.nextInt();
+        System.out.println("Number is  "+ a);
+
+
+        if( a%7 == 0 || a%3 == 0 ){
+            System.out.println("Number is divisible by 7 and 3");
+        }
+        else {
+            System.out.println("Number is not divisible by 7 and 3");
+        }
+    }
+} 
+
+
+11)number swap (three ways )
+
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner ac = new Scanner(System.in);
+
+        System.out.println("Enter Value of a :");
+        int a = ac.nextInt();
+        System.out.println("Value of a "+ a);
+
+        System.out.println("Enter Value of b :");
+        int b = ac.nextInt();
+        System.out.println("Value is b " + b);
+
+        int c;
+
+        c=a;
+        a=b;
+        b=c;
+
+        System.out.println("Swap Value of a " + a );
+        System.out.println("Swap value of b " + b);
+    }
+}
+
+
+12)m =you are 
+f = female 
+other 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a number :");
+        char ch= sc.next().charAt(0);
+        if (ch=='m')
+        {
+            System.out.println("male ");
+        } else if (ch=='f') {
+            System.out.println("female");
+
+        } else
+        {
+            System.out.println("not match");
+        }
+
+    }
+}
+
+
+
+13) 
+number 
+1 =>sunday 
+2 =>monday 
+3 =>tuesday 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a number :");
+        int a = sc.nextInt();
+        if (a==1)
+        {
+            System.out.println("sunday ");
+        } else if (a==2) {
+            System.out.println("monday");
+        } else if (a==3) {
+            System.out.println("tuesday");
+        } else if (a==4) {
+            System.out.println("wednesday");
+
+        } else if (a==5) {
+            System.out.println("thursday");
+
+        } else if (a==6) {
+            System.out.println("friday");
+
+        } else if (a==7) {
+            System.out.println("saturday");
+
+        } else
+        {
+            System.out.println("please enter a valid number ");
+        }
+
+    }
+}
+
+
+
+14 )user number 
+check number :even odd 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter a number :");
+        int a= sc.nextInt();
+
+        if  (a%2==0)
+        {
+            System.out.println("this is even number");
+        }
+
+        else
+        {
+            System.out.println(" this is odd number");
+        }
+
+    }
+}
+
+
+15)
+char match 
+a =>apple 
+b :ball 
+c :cat 
+not match 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a number :");
+        char ch= sc.next().charAt(0);
+        if (ch=='a')
+        {
+            System.out.println("apple ");
+        } else if (ch=='b') {
+            System.out.println("ball");
+        } else if (ch=='c') {
+            System.out.println("cat");
+        }  else
+        {
+            System.out.println("please enter a valid Character");
+        }
+
+    }
+}

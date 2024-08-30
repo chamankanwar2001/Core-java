@@ -1,0 +1,59 @@
+class Main {
+    
+   
+    void add() {
+        int a = 5;
+        int b = 10;
+        int sum = a + b;
+        System.out.println("Sum: " + sum);
+    }
+    
+  
+    int multi() {
+        int x = 4;
+        int y = 3;
+        return x * y;
+    }
+    
+  
+    void sub(int a, int b) {
+        int diff = a - b;
+        System.out.println("Difference: " + diff);
+    }
+    
+  
+    int div(int a, int b) {
+        if (b != 0) {
+            return a / b;
+        } else {
+            System.out.println("Cannot divide by zero!");
+            return 0;
+        }
+    }
+    
+
+    int mod() {
+        int a = 10;
+        int b = 3;
+        return a % b;
+    }
+    
+    public static void main(String[] args) {
+        Main obj = new Main();
+        
+        obj.add(); 
+        
+        int product = obj.multi(); 
+        System.out.println("Product: " + product);
+        
+        obj.sub(15, 5); 
+        
+        int quotient = obj.div(20, 4);
+        System.out.println("Quotient: " + quotient);
+        
+        int remainder = obj.mod();
+        System.out.println("Remainder: " + remainder);
+    }
+}
+
+
