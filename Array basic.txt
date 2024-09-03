@@ -1,0 +1,177 @@
+all primitive data type used :store homogenous data 
+
+
+all primitive data type used :store homogenous data 
+
+(int)
+public class Main{
+    public static void main(String[] args){
+        int a[]={1,2,3,4,5,6};
+        System.out.println(a[5]);
+
+    }
+  }
+  
+(byte)
+public class Main{
+    public static void main(String[] args){
+        byte a[]={1,6,7,3};
+        System.out.println(a[2]);
+
+    }
+  }
+  
+(short) 
+
+ public class Main{
+    public static void main(String[] args){
+        short a[]={18,36,57,63};
+        System.out.println(a[2]);
+
+    }
+  }
+  
+(long)
+ public class Main{
+    public static void main(String[] args){
+        short a[]={1800,3600,5700,6300};
+        System.out.println(a[2]);
+
+    }
+  }
+  
+  (double)
+ public class Main{
+    public static void main(String[] args){
+        double a[]={18.00,36.00,57.00,63.00};
+        System.out.println(a[2]);
+
+    }
+  }
+  
+  (float)
+  
+   public class Main{
+    public static void main(String[] args){
+        float a[]={1.8f,3.6f,5.8f,6.3f};
+        System.out.println(a[2]);
+
+    }
+  }
+  
+  (boolean)
+  
+  public class Main{
+    public static void main(String[] args){
+        boolean a[]={true,false,true};
+        System.out.println(a[2]);
+
+    }
+  ]
+
+----------------------------------------------------
+
+
+Object class : 
+
+public class Main{
+    public static void main(String[] args){
+        Object a[]={"hello",8.9f,'c',9};
+        System.out.println(a[0]);
+
+    }
+  }
+
+String 
+
+public class Main{
+    public static void main(String[] args){
+        String a[]={"hello","chaman"};
+        System.out.println(a[1]);
+
+    }
+  }
+
+
+-----------------------------------------------------
+
+all primitive data type used :store homogenous data 
+
+(int)
+public class Main{
+    public static void main(String[] args){
+        int a[]={1,2,3,4,5,6};
+        System.out.println(a[5]);
+
+    }
+  }
+  
+(byte)
+public class Main{
+    public static void main(String[] args){
+        byte a[]={1,6,7,3};
+        System.out.println(a[2]);
+
+    }
+  }
+  
+(short) 
+
+ public class Main{
+    public static void main(String[] args){
+        short a[]={18,36,57,63};
+        System.out.println(a[2]);
+
+    }
+  }
+  
+(long)
+ public class Main{
+    public static void main(String[] args){
+        short a[]={1800,3600,5700,6300};
+        System.out.println(a[2]);
+
+    }
+  }
+  
+  (double)
+ public class Main{
+    public static void main(String[] args){
+        double a[]={18.00,36.00,57.00,63.00};
+        System.out.println(a[2]);
+
+    }
+  }
+  
+  (float)
+  
+   public class Main{
+    public static void main(String[] args){
+        float a[]={1.8f,3.6f,5.8f,6.3f};
+        System.out.println(a[2]);
+
+    }
+  }
+  
+  (boolean)
+  
+  public class Main{
+    public static void main(String[] args){
+        boolean a[]={true,false,true};
+        System.out.println(a[2]);
+
+    }
+  ]
+  
+  
+  
+  
+
+
+
+-----------------------------------------------------
+
+
+  
+  
+
