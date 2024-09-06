@@ -1,0 +1,190 @@
+string []:five element addd
+
+copy another array 
+
+shallow copy 
+deep copy 
+
+public class Main {
+    public static void main(String[] args) {
+        
+        String[] arr1 = {"one", "two", "three", "four", "five"};
+
+        String[] shallowCopy = arr1;
+		
+        String[] deepCopy = new String[arr1.length];
+        System.arraycopy(arr1, 0, deepCopy, 0, arr1.length);
+
+     
+        arr1[0] = "changed";
+
+        System.out.println("Original: " + String.join(", ", arr1));
+        System.out.println("Shallow Copy: " + String.join(", ", shallowCopy));
+        System.out.println("Deep Copy: " + String.join(", ", deepCopy));
+    }
+}
+
+
+-------------------------------------------------------------
+int a[]
+b[]=a
+c[]=b
+d[]=c
+e[]=d 
+
+shallow copy and deep copy 
+
+public class Main {
+    public static void main(String[] args) {
+       
+        Integer[] a = {1, 2, 3, 4, 5};
+
+       
+        Integer[] b = a; 
+        Integer[] c = b;  
+        Integer[] d = c;  
+        Integer[] e = d; 
+
+    
+        a[0] = 99;
+
+        System.out.println("After changing 'a':");
+        printArray(a, b, c, d, e);
+
+      
+        Integer[] deepCopy = new Integer[a.length];
+        System.arraycopy(a, 0, deepCopy, 0, a.length);
+
+     
+        deepCopy[1] = 100;
+
+        System.out.println("After modifying 'deepCopy':");
+        printArray(a, b, c, d, e);
+    }
+
+    static void printArray(Integer[] a, Integer[] b, Integer[] c, Integer[] d, Integer[] e) {
+        System.out.println("a: " + java.util.Arrays.toString(a));
+        System.out.println("b: " + java.util.Arrays.toString(b));
+        System.out.println("c: " + java.util.Arrays.toString(c));
+        System.out.println("d: " + java.util.Arrays.toString(d));
+        System.out.println("e: " + java.util.Arrays.toString(e));
+    }
+}
+
+----------------------------------------------------
+a changes 
+a b c d e 
+shallow copy and deep copy 
+
+public class Main {
+    public static void main(String[] args) {
+       
+        Integer[] a = {1, 2, 3, 4, 5};
+        Integer[] b = a;  
+        Integer[] c = b;  
+        Integer[] d = c;  
+        Integer[] e = d;  
+
+       
+        Integer[] deepCopy = new Integer[a.length];
+        System.arraycopy(a, 0, deepCopy, 0, a.length);
+
+        
+        a[0] = 99; 
+
+        System.out.println("After modifying 'a':");
+        printArrays(a, b, c, d, e, deepCopy);
+    }
+
+    static void printArrays(Integer[] a, Integer[] b, Integer[] c, Integer[] d, Integer[] e, Integer[] deepCopy) {
+        System.out.println("a: " + java.util.Arrays.toString(a));
+        System.out.println("b: " + java.util.Arrays.toString(b));
+        System.out.println("c: " + java.util.Arrays.toString(c));
+        System.out.println("d: " + java.util.Arrays.toString(d));
+        System.out.println("e: " + java.util.Arrays.toString(e));
+        System.out.println("deepCopy: " + java.util.Arrays.toString(deepCopy));
+    }
+}
+
+
+----------------------------------------------------
+
+a no change 
+b no change 
+c change 
+
+a,b,c,d,e effect 
+shallow copy and deep copy 
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Integer[] a = {1, 2, 3, 4, 5};
+        Integer[] b = a;  
+        Integer[] c = b;  
+        Integer[] d = c;  
+        Integer[] e = d;  
+
+      
+        Integer[] deepCopy = new Integer[a.length];
+        System.arraycopy(a, 0, deepCopy, 0, a.length);
+
+        
+        c[2] = 77; 
+
+        System.out.println("After modifying 'c':");
+        printArrays(a, b, c, d, e, deepCopy);
+    }
+
+    static void printArrays(Integer[] a, Integer[] b, Integer[] c, Integer[] d, Integer[] e, Integer[] deepCopy) {
+        System.out.println("a: " + java.util.Arrays.toString(a));
+        System.out.println("b: " + java.util.Arrays.toString(b));
+        System.out.println("c: " + java.util.Arrays.toString(c));
+        System.out.println("d: " + java.util.Arrays.toString(d));
+        System.out.println("e: " + java.util.Arrays.toString(e));
+        System.out.println("deepCopy: " + java.util.Arrays.toString(deepCopy));
+    }
+}
+
+----------------------------------------------------
+a no change 
+b no change 
+c no change 
+d no change
+e change 
+
+a,b,c,d,e effect 
+shallow copy and deep copy 
+
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Integer[] a = {1, 2, 3, 4, 5};
+        Integer[] b = a; 
+        Integer[] c = b; 
+        Integer[] d = c; 
+        Integer[] e = d; 
+
+       
+        Integer[] deepCopy = new Integer[a.length];
+        System.arraycopy(a, 0, deepCopy, 0, a.length);
+
+       
+        e[3] = 88; 
+
+        System.out.println("After modifying 'e':");
+        printArrays(a, b, c, d, e, deepCopy);
+    }
+
+    static void printArrays(Integer[] a, Integer[] b, Integer[] c, Integer[] d, Integer[] e, Integer[] deepCopy) {
+        System.out.println("a: " + java.util.Arrays.toString(a));
+        System.out.println("b: " + java.util.Arrays.toString(b));
+        System.out.println("c: " + java.util.Arrays.toString(c));
+        System.out.println("d: " + java.util.Arrays.toString(d));
+        System.out.println("e: " + java.util.Arrays.toString(e));
+        System.out.println("deepCopy: " + java.util.Arrays.toString(deepCopy));
+    }
+}
+
+----------------------------------------------------

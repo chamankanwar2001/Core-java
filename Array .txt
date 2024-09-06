@@ -1,0 +1,123 @@
+
+user input array :
+	1,2,1,4,1,6,7,4,5,4,2
+	target : 4 
+	count :how many times
+	position :which 
+	first position 
+	last position 
+	
+	public class Main {
+    public static void main(String[] args) {
+        Integer[] arr = {1, 2, 1, 4, 1, 6, 7, 4, 5, 4, 2};
+        int target = 4;
+        int count = 0, firstPos = -1, lastPos = -1;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                count++;
+                if (firstPos == -1) firstPos = i;
+                lastPos = i;
+            }
+        }
+
+        System.out.println("Count: " + count);
+        System.out.println("First Position: " + firstPos);
+        System.out.println("Last Position: " + lastPos);
+    }
+}
+
+-----------------------------------------------------------------------------
+array :1,2,3,4,5,6,7,8,9,10
+target :count greater than target element 
+	which elements 
+	even 
+	palindrome 
+	Armstrong 
+	prime number 
+	
+	public class Main {
+    public static void main(String[] args) {
+        Integer[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int target = 4;
+        int countGreater = 0;
+        StringBuilder greaterElems = new StringBuilder();
+
+        for (int num : arr) {
+            if (num > target) {
+                countGreater++;
+                greaterElems.append(num).append(" ");
+            }
+        }
+
+        System.out.println("Count > target: " + countGreater);
+        System.out.println("Elements > target: " + greaterElems);
+    }
+}
+
+-----------------------------------------------------------------------------
+array :1,2,3,4,5,6,7,8,9,10 
+two parts : first part sum check :prime number 
+second part sum : check neon number
+
+public class Main {
+    public static void main(String[] args) {
+        Integer[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int mid = arr.length / 2;
+        int sum1 = 0, sum2 = 0;
+
+        for (int i = 0; i < mid; i++) sum1 += arr[i];
+        for (int i = mid; i < arr.length; i++) sum2 += arr[i];
+
+        System.out.println("First part sum: " + sum1 + " is Prime? " + isPrime(sum1));
+        System.out.println("Second part sum: " + sum2 + " is Neon? " + isNeon(sum2));
+    }
+
+    static boolean isPrime(int n) {
+        if (n < 2) return false;
+        for (int i = 2; i <= n / 2; i++) if (n % i == 0) return false;
+        return true;
+    }
+
+    static boolean isNeon(int n) {
+        int sq = n * n, sum = 0;
+        while (sq > 0) {
+            sum += sq % 10;
+            sq /= 10;
+        }
+        return sum == n;
+    }
+}
+
+-----------------------------------------------------------------------------
+array :1,2,3,4,5,6,7,8,9,10 
+starting point and ending point 
+	reverse array 
+	sp :2
+	ep :7
+	1,2,8,7,6,5,4,3,9,10 
+	
+	
+	import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        Integer[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int sp = 2, ep = 7;
+
+        reverseSubArray(arr, sp, ep);
+        System.out.println("Reversed Array: " + Arrays.toString(arr));
+    }
+
+    static void reverseSubArray(Integer[] arr, int start, int end) {
+        while (start < end) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
+    }
+}
+
+-----------------------------------------------------------------------------
