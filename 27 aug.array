@@ -1,0 +1,148 @@
+all primitive data type 
+
+
+
+
+String 
+
+Object
+ 
+var 
+
+for loop and for each print 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int i = 10;
+        char c = 'A';
+        boolean b = true;
+        double d = 3.14;
+        float f = 9.8f;
+        long l = 123456789L;
+        short s = 5000;
+        byte y = 127;
+
+        String str = "Hello World";
+
+        Object obj = new Object();
+
+        var autoVar = 100;  // Compiler infers it as an int
+
+        System.out.println("int: " + i);
+        System.out.println("char: " + c);
+        System.out.println("boolean: " + b);
+        System.out.println("double: " + d);
+        System.out.println("float: " + f);
+        System.out.println("long: " + l);
+        System.out.println("short: " + s);
+        System.out.println("byte: " + y);
+        System.out.println("String: " + str);
+        System.out.println("Object: " + obj);
+        System.out.println("var (inferred as int): " + autoVar);
+    }
+}
+
+---------------------------------------------------------------
+1,2,3,4,5,6,7,8,9,10 
+
+size find 
+first element and mid element and last element normal indexing 
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        int size = arr.length;
+        System.out.println("Size of the array: " + size);
+
+        int first = arr[0];
+        int middle = arr[size / 2];
+        int last = arr[size - 1];
+
+        System.out.println("First element: " + first);
+        System.out.println("Middle element: " + middle);
+        System.out.println("Last element: " + last);
+
+        System.out.println("Array using for loop:");
+        for (int i = 0; i < size; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("Array using for-each loop:");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+}
+
+
+--------------------------------------------------------------
+1,2,3,4,5,6,7,8,9,10 
+
+for loop 
+
+
+10,9,8,7,6,5,4,3,2,1 
+
+1,2,3,4,5,10,9,8,7,6 
+
+5,4,3,2,1,6,7,8,9,10
+
+5,4,3,2,1,10,9,8,7,6
+
+
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        System.out.println("Original array:");
+        printArray(arr);
+
+        System.out.println("Reversed array:");
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("Mixed order 1,2,3,4,5,10,9,8,7,6:");
+        for (int i = 0; i < 5; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        for (int i = arr.length - 1; i >= 5; i--) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("Mixed order 5,4,3,2,1,6,7,8,9,10:");
+        for (int i = 4; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+        for (int i = 5; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("Mixed order 5,4,3,2,1,10,9,8,7,6:");
+        for (int i = 4; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+        for (int i = arr.length - 1; i >= 5; i--) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void printArray(int[] arr) {
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+}
+ 

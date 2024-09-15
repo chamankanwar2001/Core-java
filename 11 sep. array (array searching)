@@ -1,0 +1,81 @@
+1)searching :linear search 
+		binary search 
+		
+		
+		import java.util.Scanner;
+
+public class Main {
+    public static int linearSearch(int[] arr, int key) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == key) {
+                return i;
+            }
+        }
+        return -1;  
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter array elements separated by spaces:");
+        String[] input = sc.nextLine().split(" ");
+        int[] arr = new int[input.length];
+
+        for (int i = 0; i < input.length; i++) {
+            arr[i] = Integer.parseInt(input[i].trim());
+        }
+
+        System.out.println("Enter the element to search:");
+        int key = sc.nextInt();
+
+        int result = linearSearch(arr, key);
+        if (result != -1)
+            System.out.println("Element found at index: " + result);
+        else
+            System.out.println("Element not found");
+    }
+}
+
+
+
+binary search 
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static int binarySearch(int[] arr, int key) {
+        int left = 0, right = arr.length - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (arr[mid] == key)
+                return mid;
+            if (arr[mid] < key)
+                left = mid + 1;
+            else
+                right = mid - 1;
+        }
+        return -1;  
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter sorted array elements separated by spaces:");
+        String[] input = sc.nextLine().split(" ");
+        int[] arr = new int[input.length];
+
+        for (int i = 0; i < input.length; i++) {
+            arr[i] = Integer.parseInt(input[i].trim());
+        }
+
+        System.out.println("Enter the element to search:");
+        int key = sc.nextInt();
+
+        int result = binarySearch(arr, key);
+        if (result != -1)
+            System.out.println("Element found at index: " + result);
+        else
+            System.out.println("Element not found");
+    }
+}
+
+
