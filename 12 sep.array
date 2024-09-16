@@ -1,0 +1,91 @@
+1)user input array 0 and 1 
+0,1,,1,1,0,0,1,0,1 
+
+zero then one 
+one then zero 
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+      
+        System.out.println("Enter array elements (0 or 1) separated by commas:");
+        String[] input = sc.nextLine().split(",");
+        int[] arr = new int[input.length];
+
+        for (int i = 0; i < input.length; i++) {
+            arr[i] = Integer.parseInt(input[i].trim());
+        }
+
+       
+        int countZero = 0, countOne = 0;
+        for (int num : arr) {
+            if (num == 0) countZero++;
+            else countOne++;
+        }
+
+        System.out.println("Zero then one:");
+        for (int i = 0; i < countZero; i++) {
+            System.out.print(0 + " ");
+        }
+        for (int i = 0; i < countOne; i++) {
+            System.out.print(1 + " ");
+        }
+
+        System.out.println();
+
+        
+        System.out.println("One then zero:");
+        for (int i = 0; i < countOne; i++) {
+            System.out.print(1 + " ");
+        }
+        for (int i = 0; i < countZero; i++) {
+            System.out.print(0 + " ");
+        }
+    }
+}
+
+
+
+2)
+user input :
+0,1,2 
+
+0 ,1 , 2 
+
+2 ,1 0 
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+       
+        System.out.println("Enter array elements separated by commas:");
+        String[] input = sc.nextLine().split(",");
+        int[] arr = new int[input.length];
+
+        for (int i = 0; i < input.length; i++) {
+            arr[i] = Integer.parseInt(input[i].trim());
+        }
+
+        
+        System.out.println("Original order:");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        
+        System.out.println("Reversed order:");
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}

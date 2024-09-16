@@ -1,0 +1,67 @@
+
+
+two pointer variable : 
+-----------------------------------------------------
+1 2 3 4 5 
+
+odd number 
+even number 
+
+
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        int left = 0; 
+        int right = arr.length - 1;  
+        
+        int[] result = new int[arr.length];  
+        int evenPointer = 0;
+        int oddPointer = arr.length - 1; 
+        
+        while (left <= right) {
+            if (arr[left] % 2 == 0) {
+                result[evenPointer++] = arr[left];
+            } else {
+                result[oddPointer--] = arr[left];
+            }
+            left++;
+        }
+        
+        System.out.println("Even Numbers first, Odd Numbers next:");
+        for (int num : result) {
+            System.out.print(num + " ");
+        }
+    }
+}
+
+------------------------------------------------
+5,6,7,8,9 
+
+even number 
+odd number 
+------------------------------------------------
+user input : 
+Armstrong number prime number 
+
+------------------------------------------------
+user input binary number :
+
+zero then one 
+
+one then zero
+-----------------------------------------------------
+zero one two 
+
+two one zero 
+-------------------------------------------------------
+without two pointer variable : 
+
+user number :
+positive and negative and zero 
+
+3,-2,9,-4,5,0 
+
+square 
+sort 
+userdefine 
+-------------------------------------------------------
