@@ -1,0 +1,4612 @@
+( constructor)
+
+class A 
+default constructor :add 
+
+multi() :return and no argument 
+
+class Main 
+Main() -->div 
+
+mod() : no return and argument 
+
+main :access 
+
+
+class A 
+default constructor :add 
+
+
+
+class A{
+    A(){
+        int a=1;
+        int b = 2;
+
+        int c = a+b;
+
+        System.out.println(c);
+
+    }
+}
+
+
+
+public class Main {
+
+
+
+    public static void main(String[] args) {
+
+        A k = new A();
+        
+        
+    }
+}
+
+multi() :return and no argument 
+
+class Main 
+Main() -->div 
+
+mod() : no return and argument 
+
+main :access 
+
+
+
+
+class A{
+    A(){
+        int a=1;
+        int b = 2;
+
+        int c = a+b;
+
+        System.out.println(c);
+
+    }
+}
+
+class Man{
+    Man(){
+        int a = 6;
+        int b = 2;
+
+        int c = a/b;
+
+        System.out.println("Div is = "+c);
+
+
+    }
+}
+
+
+
+
+
+public class Main {
+
+    int Multi(){
+        int a = 7;
+        int b = 8;
+        int c = a*b;
+
+      
+         return c;
+
+
+
+    }
+
+
+    void Mod(int f) {
+        System.out.println("a and b mod is " + f);
+    }
+
+    
+    public static void main(String[] args) {
+
+        A k = new A();
+        int a=4;
+        int b =2;
+        int f =a%b;
+        
+
+        Main m = new Main();
+        m.Multi();
+        System.out.println("a and b Multi is "+m.Multi());
+
+
+        Man d = new Man();
+
+        Main sum =new Main();
+        sum.Mod(f);
+    }
+}
+
+--------------------------------------------------------
+2)
+A
+default constructor :add 
+
+
+B
+default constructor :multi 
+
+
+C
+default constructor :div 
+
+
+D
+default constructor :mod 
+
+Main
+default constructor :
+
+
+import java.util.*;
+
+class A {
+    A(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter the Value of a ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter the Value of a ");
+        int b = dc.nextInt();
+
+        int c = a+b;
+
+        System.out.println("A and B Addition Value is "+c);
+
+        
+
+    }
+}
+
+class B{
+    B(){
+
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter the Value of a ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter the Value of a ");
+        int b = dc.nextInt();
+
+        int c = a*b;
+
+        System.out.println("A and B Multi Value is "+c);
+
+    }
+}
+
+class C{
+    C(){
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter the Value of a ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter the Value of a ");
+        int b = dc.nextInt();
+
+        int c = a/b;
+
+        System.out.println("A and B Div Value is "+c);
+
+    }
+}
+
+class D{
+    D(){
+
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter the Value of a ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter the Value of a ");
+        int b = dc.nextInt();
+
+        int c = a%b;
+
+        System.out.println("A and B Mod Value is "+c);
+
+    }
+}
+
+class E{
+    E(){
+
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter the Value of a ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter the Value of a ");
+        int b = dc.nextInt();
+
+        int c = a-b;
+
+        System.out.println("A and B Sub Value is "+c);
+
+    }
+}
+
+
+public class  Main{
+    public static void main(String[] args) {
+        Scanner dc = new Scanner(System.in);
+        
+        A a=new A();
+        B b=new B();
+        C c=new C();
+        D d=new D();
+        E e=new E();
+    }
+}
+---------------------------------------------
+default value print :
+primitive data :print defaul values through instance variable . 
+
+
+
+import java.util.*;
+
+class ch{
+    ch(){
+        char g = 'G';
+        System.out.println(g);
+
+    }
+}
+
+class in{
+    in(){
+        int a = 123;
+        System.out.println(a);
+    }
+}
+
+class fl{
+    fl(){
+        float f=5.6f;
+        System.out.println(f);
+    }
+}
+
+class lg{
+    lg(){
+        long l = 123456789;
+        System.out.println(l);
+    }
+}
+
+class shott{
+    shott(){
+        short s = 12345;
+        System.out.println(s);
+    }
+}
+
+class dob{
+    dob(){
+        double d=5.6;
+        System.out.println(d);
+
+    }
+
+}
+
+class bt {
+    bt(){
+        byte b = 125;
+        System.out.println(b);
+
+    }
+}
+
+public class Main{
+    public static void main(String[] args) {
+        ch c=new ch();
+
+        in i = new in();
+
+        fl f = new fl();
+
+        lg l = new lg();
+
+        shott s = new shott();
+
+        dob d =new dob();
+
+        bt b = new bt();
+
+
+
+
+    }
+}
+------------------------------------------------
+
+
+12 april constructor and parameterise
+
+=======================================================
+class A 
+constructor :parameterise :addition 
+
+method1()==> return and no argument 
+
+
+class B
+constructor :parameterise :sub 
+method1()==> return and  argument 
+
+
+
+class C
+constructor :parameterise :multi
+method1()==>no return and no argument 
+
+
+class D 
+constructor :parameterise :div
+method1()==> return and no argument 
+
+
+
+class E 
+constructor :parameterise :mod 
+ method1()==>no return and  argument 
+
+
+Main class
+default constructor :hello world 
+ :access all classes method and parameter 
+ 
+ 
+ 
+ class A 
+constructor :parameterise :addition 
+
+method1()==> return and no argument 
+
+
+
+class A{
+    int c;
+
+    A(int c){
+        this.c=c;
+        System.out.println(c);
+
+    }
+
+    int Methord(){
+        this.c=c;
+        System.out.println("c value "+ c);
+        return c;
+
+    }
+
+
+
+    
+}
+
+
+public class Main {
+
+
+    public static void main(String[] args) {
+
+        int a=8;
+        int b=9;
+        int c = a+b;
+        
+        A k = new A(c);
+        
+        
+        k.Methord();
+        
+        
+    }
+}
+
+
+class B
+constructor :parameterise :sub 
+method1() ==> return and  argument 
+
+
+class B{
+    int c;
+
+    B(int c ){
+        this.c=c;
+        System.out.println(c);
+
+    }
+
+    int Method1(int c ){
+        this.c=c;
+        System.out.println("Value is "+ c);
+        return c;
+    }
+}
+
+public class Main{
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 4;
+
+        int c= a-b;
+
+        B k = new B(c);
+        k.Method1(c);
+        
+    }
+}
+
+
+
+
+
+
+class C
+constructor :parameterise :multi
+method1()==>no return and no argument 
+
+class C{
+    int c;
+    C(int c){
+        this.c=c;
+        System.out.println("Multi is " + c);
+
+    }
+    void Methord(){
+        this.c=c;
+        System.out.println("Multi value is "+c);
+    }
+
+
+}
+
+public class Main{
+    public static void main(String[] args) {
+        int a = 6;
+        int b = 4;
+
+        int c = a*b;
+
+        C k = new C(c);
+        k.Methord();
+
+
+
+    }
+}
+
+
+
+class D 
+constructor :parameterise :div
+method1()==> return and no argument 
+
+
+class D{
+    int c;
+    D(int c){
+        this.c = c;
+        System.out.println(c);
+
+    }
+
+    int Method1(){
+        this.c=c;
+        System.out.println("Value is "+c);
+        return c;
+    }
+}
+
+public class Main{
+    public static void main(String[] args) {
+        int a = 6;
+        int b = 2;
+
+        int c = a/b;
+
+        D k = new D(c);
+        k.Method1();
+        
+    }
+}
+
+
+
+class E 
+constructor :parameterise :mod 
+ method1()==>no return and  argument 
+
+class E{
+    int c;
+    E(int c){
+        this.c=c;
+        System.out.println(c);
+    }
+
+    void methord2(){
+        this.c=c;
+        System.out.println("Value of c "+c);
+    }
+}
+
+public class Main{
+    public static void main(String[] args) {
+        int a = 25;
+        int b = 5;
+
+        int c = a%b;
+
+        E k = new E(c);
+        k.methord2();
+
+
+        
+    }
+}
+
+
+
+--------------------------------------------------------------------------
+class A 
+constructor :parameterise :addition 
+
+method1()==> 
+
+
+class B
+constructor :parameterise :sub 
+method1()==> 
+
+
+class C
+constructor :parameterise :multi
+method1()==>no return and no argument 
+
+
+class D 
+constructor :parameterise :div
+method1()==> return and no argument 
+
+
+
+class E 
+constructor :parameterise :mod 
+ method1()==>no return and  argument 
+
+
+Main class
+default constructor :hello world 
+ :access all classes method and parameter 
+ 
+ 
+ 
+ Main class
+default constructor :hello world 
+ :access all classes method and parameter 
+
+
+class A{
+    A(){
+
+        String a = "hello world";
+
+        System.out.println(a);
+    }
+}
+
+public class Main{
+    public static void main(String[] args) {
+
+        A k = new A();
+        
+    }
+}
+
+class A 
+constructor :parameterise :addition 
+
+method1()==> 
+
+
+class B
+constructor :parameterise :sub 
+method1()==> 
+
+
+class C
+constructor :parameterise :multi
+method1()==>no return and no argument 
+
+
+class D 
+constructor :parameterise :div
+method1()==> return and no argument 
+
+
+
+class E 
+constructor :parameterise :mod 
+ method1()==>no return and  argument 
+
+
+Main class
+default constructor :hello world 
+ :access all classes method and parameter 
+
+
+import java.util.*;
+
+
+
+class A{
+    int c;
+    A(int c){
+        this.c=c;
+        System.out.println("Addition " + c);
+
+    }
+
+    int method1(){
+        this.c=c;
+        System.out.println("Addition method " + c);
+        return c;
+    }
+
+
+}
+
+class B {
+    int d;
+    B(int d){
+        this.d=d;
+        System.out.println("Sub " + d);
+
+
+    }
+    int method2(int d){
+        this.d=d;
+        System.out.println("Sub "+d);
+        return d;
+    }
+}
+
+class C {
+    int e;
+    C(int e){
+        this.e=e;
+        System.out.println("Multi "+e);
+        
+    }
+
+    void method3(){
+        this.e=e;
+        System.out.println("Multi method "+ e);
+    }
+}
+
+class D {
+    int f;
+    D(int f){
+        this.f=f;
+        System.out.println("div " + f);
+        
+    }
+
+    int method4(){
+        this.f=f;
+        System.out.println("div Method " + f);
+        return f;
+    }
+}
+
+class E {
+    int g;
+    E(int g){
+        this.g=g;
+        System.out.println("Mod "+g);
+        
+    }
+
+    void method5(int g){
+        this.g=g;
+        System.out.println("Method Mod " + g);
+        
+    }
+
+    
+}
+
+class Default{
+    Default(){
+        String a = "Hello world";
+        System.out.println(a);
+        
+    }
+}
+
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Ente value of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter value of b :");
+        int b = dc.nextInt();
+
+        int c = a+b;
+        int d = a-b;
+        int e = a*b;
+        int f = a/b;
+        int g = a%b;
+
+        A ad = new A(c);
+        B su = new B(d);
+        C mu = new C(e);
+        D div = new D(f);
+        E mo = new E(g);
+
+        ad.method1();
+        su.method2(d);
+        mu.method3();
+        div.method4();
+        mo.method5(g);
+
+        Default v = new Default();
+
+
+        
+
+
+    }
+}
+-----------------------------------------
+13 april (saturday)
+14 april (sunday)
+=========================================
+15 april
+
+user input 
+------------------------------------------------
+single level : 
+
+class A
+add :no return and no argument 
+multi: return and no argument 
+
+class B
+div : return and  argument 
+mod:no return and  argument 
+
+
+Main :sub :return and no argument 
+
+
+
+import java.util.*;
+
+
+class A{
+
+    void add(){
+
+        Scanner dc = new Scanner( System.in);
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : " );
+        int b = dc.nextInt();
+
+        int c = a+b;
+        System.out.println(" Addition of a and b : " + c);
+
+
+    }
+
+    int multi(){
+        Scanner dc = new Scanner( System.in);
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : " );
+        int b = dc.nextInt();
+        int c = a*b;
+        System.out.println(" Multi is :" + c);
+
+        return c;
+        
+
+    }
+}
+
+
+class B extends A {
+    int div(int c){
+        System.out.println(" Division :" + c);
+
+        return c;
+
+    }
+
+    void mod( int d){
+
+        System.out.println("Mod is :" + d);
+
+    }
+}
+
+
+public class Main{
+    
+
+    int sub (){
+        
+        Scanner dc = new Scanner( System.in);
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : " );
+        int b = dc.nextInt();
+
+        int e = a-b;
+
+
+        System.out.println("sub " + e);
+        return e;
+
+
+
+    }
+    public static void main(String[] args) {
+
+        B k = new B();
+        k.add();
+        k.multi();
+
+
+        Scanner dc = new Scanner( System.in);
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : " );
+        int b = dc.nextInt();
+
+
+
+        int c = a/b;
+        int d = a%b;
+       
+        
+
+        k.div(c);
+        k.mod(d);
+
+        Main su = new Main();
+        su.sub();
+        
+
+        
+    }
+}
+-------------------------------------------------------
+single level : 
+
+class A
+add :no return and no argument 
+multi: return and no argument 
+
+class B
+instance variable (int a,int b)
+div : return and  argument 
+mod:no return and no argument 
+
+
+Main :sub :
+instance variable (int a,int b)
+return and  argument 
+
+
+import java.util.*;
+
+class A{
+
+    void add(){
+
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b :");
+        int b = dc.nextInt();
+
+        int c = a+b;
+
+        System.out.println("Addition"+c);
+
+    }
+
+    int multi(){
+
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b :");
+        int b = dc.nextInt();
+
+        int c = a*b;
+
+        System.out.println("Multi : "+c);
+        return c;
+
+
+    }
+
+    
+}
+
+class B extends A{
+
+    int c;
+    int d ;
+    int div(int c ){
+        this.c=c;
+
+        System.out.println("Div " + c);
+        return c;
+
+    }
+
+    void mod(){
+
+        Scanner dc = new Scanner(System.in);
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b :");
+        int b = dc.nextInt();
+
+        int d = a%b;
+
+        System.out.println("mod " + d);
+
+    }
+    
+}
+
+
+public class Main{
+    int a ;
+    int b ;
+
+
+    int sub(int a,int b){
+        this.a=a;
+        this.b=b;
+
+        int c = a-b;
+
+        System.out.println("Sub " + c);
+        return c;
+
+
+        
+
+
+    }
+
+    public static void main(String[] args){
+        Scanner dc = new Scanner(System.in);
+
+        B dd = new B();
+        dd.add();
+        dd.multi();
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b :");
+        int b = dc.nextInt();
+
+        int c = a/b;
+        
+
+        dd.div(c);
+        dd.mod();
+
+        Main ed = new Main();
+        ed.sub(a, b);
+
+
+
+
+
+        
+    }
+}
+------------------------------------------------------------
+single level : 
+
+class A
+add :no return and no argument 
+multi: return and no argument :covarint 
+
+class B
+instance variable (int a,int b)
+div : return and  argument :covarint
+mod:no return and no argument 
+
+
+Main :sub :
+instance variable (int a,int b)
+covarint return type :hello world 
+
+return and  argument
+
+
+
+import java.util.*;
+
+
+class A{
+
+    void Add(){
+
+        Scanner dc  = new Scanner(System.in);
+
+        System.out.println("Enter Value Of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : ");
+        int b = dc.nextInt();
+
+        int c = a+b;
+
+        System.out.println(" Add " + c);
+
+    }
+
+    A Multi(){
+
+        Scanner dc  = new Scanner(System.in);
+
+        System.out.println("Enter Value Of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : ");
+        int b = dc.nextInt();
+
+        int c = a*b;
+
+        System.out.println(" Multi " + c);
+
+        return this;
+    }
+
+     
+
+}
+
+
+class B extends A{
+
+    int a ;
+    int b;
+
+
+    B div(int a,int b ){
+        this.a=a;
+        this.b=b;
+        int c = a/b;
+
+        System.out.println(" Div  " + c);
+        return this;
+
+    }
+
+    void mod (){
+        Scanner dc  = new Scanner(System.in);
+
+        System.out.println("Enter Value Of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : ");
+        int b = dc.nextInt();
+
+        int c = a%b;
+
+        System.out.println(" mod " + c);
+
+    }
+
+
+
+
+}
+
+public class Main{
+    int a;
+    int b;
+
+    Main sub(int a, int b){
+        this.a=a;
+        this.b=b;
+
+        int c = a-b;
+        System.out.println(" sub " + c);
+
+        System.out.println(" Hello World ");
+
+        return this;
+
+    }
+    public static void main(String[] args) {
+        Scanner dc  = new Scanner(System.in);
+
+
+        B k = new B();
+        k.Add();
+        k.Multi();
+       
+
+        System.out.println("Enter Value Of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : ");
+        int b = dc.nextInt();
+
+
+
+
+ 
+        k.div(a, b);
+        k.mod();
+        
+        Main k2 = new Main();
+        k2.sub(a, b);
+
+    }
+}
+
+
+ --------------------------------------------------------
+class A :
+getter setter method :
+addition :
+
+Main :
+access
+
+
+import java.util.*;
+
+class A{
+    
+    private int a;
+    private int b;
+
+
+    void set(int a , int b){
+        this.a=a;
+        this.b=b;
+
+    }
+
+    int get(){
+        return a;
+
+    }
+
+    int getA(){
+        return b;
+
+    }
+
+    void addition(){
+        int c = a+b;
+        System.out.println("Additon of a and b " + c);
+
+    }
+}
+
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter value of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter value of b : ");
+        int b = dc.nextInt();
+
+        A k = new A();
+        k.set(a, b);
+        k.addition();
+    }
+}
+
+
+--------------------------------------------------------
+class A :
+String name ;
+float per: 
+int number: 
+getter and setter method :instance variable accesss
+
+Main :
+access
+
+
+import java.util.*;
+
+
+class A{
+
+    private String name;
+    private float fl;
+    private int in;
+
+
+    void  Name(String name,float fl , int in){
+        this.name = name;
+        this.fl=fl;
+        this.in=in;
+
+    }
+
+    String name1(){
+        return name;
+        
+    }
+
+    Float name2(){
+        return fl;
+    }
+
+    int name3(){
+        return in;
+    }
+
+    void finalname(){
+        System.out.println(" Print name is : "+name);
+        System.out.println(" Print Float is : "+fl);
+        System.out.println(" Print Float is : "+in);
+    }
+
+}
+
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner dc= new Scanner( System.in);
+
+        System.out.println("Enter user name Name :");
+        String name = dc.nextLine();
+
+        System.out.println("Enter Float Value : ");
+        float fl = dc.nextFloat();
+
+        System.out.println("Enter Int  Value : ");
+        int in = dc.nextInt();
+
+        A k = new A();
+        k.Name(name, fl, in);
+        k.finalname();
+        
+
+    }
+}
+
+
+-------------------------------------------------------
+Main :
+getter and setter :
+empname 
+empfname
+empmname
+empid 
+empsalary 
+
+method access
+
+
+
+
+import java.util.*;
+
+
+public class Main{
+
+    private String empname;
+    private String empfname;
+    private int empid;
+    private int empsalary;
+
+    void set(String empname , String empfname , int empid , int empsalary){
+        this.empname=empname;
+        this.empid=empid;
+        this.empfname=empfname;
+        this.empsalary=empsalary;
+
+    }
+
+    String get(){
+        return empname;
+        
+    }
+    String get1(){
+        return empfname;
+    }
+
+    int get2(){
+        return empid;
+    }
+
+    int get3(){
+        return empsalary;
+    }
+
+    void Show(){
+        System.out.println("Emp Name is : " + empname);
+        System.out.println("Emp Name is : " + empfname);
+        System.out.println("Emp Name is : " + empid);
+        System.out.println("Emp Name is : " + empsalary);
+    }
+
+
+
+
+    public static void main(String[] args) {
+
+        Scanner dc = new Scanner(System.in);
+        
+        System.out.println("Enter empname : ");
+        String empname = dc.nextLine();
+
+        System.out.println("Enter Emp FName : ");
+        String empfname = dc.nextLine();
+
+        System.out.println("Enter Emp Id : ");
+        int empid = dc.nextInt();
+
+        System.out.println("Enter Emp Salary : ");
+        int empsalary = dc.nextInt();
+
+
+        Main  k = new Main();
+        k.set(empname,empfname,empid,empsalary);
+        k.Show();
+
+
+    }
+}
+===========================================
+15 april( )
+
+user input 
+------------------------------------------------
+single level : 
+
+class A
+add :no return and no argument 
+multi: return and no argument 
+
+class B
+div : return and  argument 
+mod:no return and  argument 
+
+
+Main :sub :return and no argument 
+
+
+
+import java.util.*;
+
+
+class A{
+
+    void add(){
+
+        Scanner dc = new Scanner( System.in);
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : " );
+        int b = dc.nextInt();
+
+        int c = a+b;
+        System.out.println(" Addition of a and b : " + c);
+
+
+    }
+
+    int multi(){
+        Scanner dc = new Scanner( System.in);
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : " );
+        int b = dc.nextInt();
+        int c = a*b;
+        System.out.println(" Multi is :" + c);
+
+        return c;
+        
+
+    }
+}
+
+
+class B extends A {
+    int div(int c){
+        System.out.println(" Division :" + c);
+
+        return c;
+
+    }
+
+    void mod( int d){
+
+        System.out.println("Mod is :" + d);
+
+    }
+}
+
+
+public class Main{
+    
+
+    int sub (){
+        
+        Scanner dc = new Scanner( System.in);
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : " );
+        int b = dc.nextInt();
+
+        int e = a-b;
+
+
+        System.out.println("sub " + e);
+        return e;
+
+
+
+    }
+    public static void main(String[] args) {
+
+        B k = new B();
+        k.add();
+        k.multi();
+
+
+        Scanner dc = new Scanner( System.in);
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : " );
+        int b = dc.nextInt();
+
+
+
+        int c = a/b;
+        int d = a%b;
+       
+        
+
+        k.div(c);
+        k.mod(d);
+
+        Main su = new Main();
+        su.sub();
+        
+
+        
+    }
+}
+-------------------------------------------------------
+single level : 
+
+class A
+add :no return and no argument 
+multi: return and no argument 
+
+class B
+instance variable (int a,int b)
+div : return and  argument 
+mod:no return and no argument 
+
+
+Main :sub :
+instance variable (int a,int b)
+return and  argument 
+
+
+import java.util.*;
+
+class A{
+
+    void add(){
+
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b :");
+        int b = dc.nextInt();
+
+        int c = a+b;
+
+        System.out.println("Addition"+c);
+
+    }
+
+    int multi(){
+
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b :");
+        int b = dc.nextInt();
+
+        int c = a*b;
+
+        System.out.println("Multi : "+c);
+        return c;
+
+
+    }
+
+    
+}
+
+class B extends A{
+
+    int c;
+    int d ;
+    int div(int c ){
+        this.c=c;
+
+        System.out.println("Div " + c);
+        return c;
+
+    }
+
+    void mod(){
+
+        Scanner dc = new Scanner(System.in);
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b :");
+        int b = dc.nextInt();
+
+        int d = a%b;
+
+        System.out.println("mod " + d);
+
+    }
+    
+}
+
+
+public class Main{
+    int a ;
+    int b ;
+
+
+    int sub(int a,int b){
+        this.a=a;
+        this.b=b;
+
+        int c = a-b;
+
+        System.out.println("Sub " + c);
+        return c;
+
+
+        
+
+
+    }
+
+    public static void main(String[] args){
+        Scanner dc = new Scanner(System.in);
+
+        B dd = new B();
+        dd.add();
+        dd.multi();
+
+        System.out.println("Enter Value of a : ");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b :");
+        int b = dc.nextInt();
+
+        int c = a/b;
+        
+
+        dd.div(c);
+        dd.mod();
+
+        Main ed = new Main();
+        ed.sub(a, b);
+
+
+
+
+
+        
+    }
+}
+------------------------------------------------------------
+single level : 
+
+class A
+add :no return and no argument 
+multi: return and no argument :covarint 
+
+class B
+instance variable (int a,int b)
+div : return and  argument :covarint
+mod:no return and no argument 
+
+
+Main :sub :
+instance variable (int a,int b)
+covarint return type :hello world 
+
+return and  argument
+
+
+
+import java.util.*;
+
+
+class A{
+
+    void Add(){
+
+        Scanner dc  = new Scanner(System.in);
+
+        System.out.println("Enter Value Of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : ");
+        int b = dc.nextInt();
+
+        int c = a+b;
+
+        System.out.println(" Add " + c);
+
+    }
+
+    A Multi(){
+
+        Scanner dc  = new Scanner(System.in);
+
+        System.out.println("Enter Value Of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : ");
+        int b = dc.nextInt();
+
+        int c = a*b;
+
+        System.out.println(" Multi " + c);
+
+        return this;
+    }
+
+     
+
+}
+
+
+class B extends A{
+
+    int a ;
+    int b;
+
+
+    B div(int a,int b ){
+        this.a=a;
+        this.b=b;
+        int c = a/b;
+
+        System.out.println(" Div  " + c);
+        return this;
+
+    }
+
+    void mod (){
+        Scanner dc  = new Scanner(System.in);
+
+        System.out.println("Enter Value Of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : ");
+        int b = dc.nextInt();
+
+        int c = a%b;
+
+        System.out.println(" mod " + c);
+
+    }
+
+
+
+
+}
+
+public class Main{
+    int a;
+    int b;
+
+    Main sub(int a, int b){
+        this.a=a;
+        this.b=b;
+
+        int c = a-b;
+        System.out.println(" sub " + c);
+
+        System.out.println(" Hello World ");
+
+        return this;
+
+    }
+    public static void main(String[] args) {
+        Scanner dc  = new Scanner(System.in);
+
+
+        B k = new B();
+        k.Add();
+        k.Multi();
+       
+
+        System.out.println("Enter Value Of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter Value of b : ");
+        int b = dc.nextInt();
+
+
+
+
+ 
+        k.div(a, b);
+        k.mod();
+        
+        Main k2 = new Main();
+        k2.sub(a, b);
+
+    }
+}
+
+
+ --------------------------------------------------------
+class A :
+getter setter method :
+addition :
+
+Main :
+access
+
+
+import java.util.*;
+
+class A{
+    
+    private int a;
+    private int b;
+
+
+    void set(int a , int b){
+        this.a=a;
+        this.b=b;
+
+    }
+
+    int get(){
+        return a;
+
+    }
+
+    int getA(){
+        return b;
+
+    }
+
+    void addition(){
+        int c = a+b;
+        System.out.println("Additon of a and b " + c);
+
+    }
+}
+
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner dc = new Scanner(System.in);
+
+        System.out.println("Enter value of a :");
+        int a = dc.nextInt();
+
+        System.out.println("Enter value of b : ");
+        int b = dc.nextInt();
+
+        A k = new A();
+        k.set(a, b);
+        k.addition();
+    }
+}
+
+
+--------------------------------------------------------
+class A :
+String name ;
+float per: 
+int number: 
+getter and setter method :instance variable accesss
+
+Main :
+access
+
+
+import java.util.*;
+
+
+class A{
+
+    private String name;
+    private float fl;
+    private int in;
+
+
+    void  Name(String name,float fl , int in){
+        this.name = name;
+        this.fl=fl;
+        this.in=in;
+
+    }
+
+    String name1(){
+        return name;
+        
+    }
+
+    Float name2(){
+        return fl;
+    }
+
+    int name3(){
+        return in;
+    }
+
+    void finalname(){
+        System.out.println(" Print name is : "+name);
+        System.out.println(" Print Float is : "+fl);
+        System.out.println(" Print Float is : "+in);
+    }
+
+}
+
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner dc= new Scanner( System.in);
+
+        System.out.println("Enter user name Name :");
+        String name = dc.nextLine();
+
+        System.out.println("Enter Float Value : ");
+        float fl = dc.nextFloat();
+
+        System.out.println("Enter Int  Value : ");
+        int in = dc.nextInt();
+
+        A k = new A();
+        k.Name(name, fl, in);
+        k.finalname();
+        
+
+    }
+}
+
+
+-------------------------------------------------------
+Main :
+getter and setter :
+empname 
+empfname
+empmname
+empid 
+empsalary 
+
+method access
+
+
+
+
+import java.util.*;
+
+
+public class Main{
+
+    private String empname;
+    private String empfname;
+    private int empid;
+    private int empsalary;
+
+    void set(String empname , String empfname , int empid , int empsalary){
+        this.empname=empname;
+        this.empid=empid;
+        this.empfname=empfname;
+        this.empsalary=empsalary;
+
+    }
+
+    String get(){
+        return empname;
+        
+    }
+    String get1(){
+        return empfname;
+    }
+
+    int get2(){
+        return empid;
+    }
+
+    int get3(){
+        return empsalary;
+    }
+
+    void Show(){
+        System.out.println("Emp Name is : " + empname);
+        System.out.println("Emp Name is : " + empfname);
+        System.out.println("Emp Name is : " + empid);
+        System.out.println("Emp Name is : " + empsalary);
+    }
+
+
+
+
+    public static void main(String[] args) {
+
+        Scanner dc = new Scanner(System.in);
+        
+        System.out.println("Enter empname : ");
+        String empname = dc.nextLine();
+
+        System.out.println("Enter Emp FName : ");
+        String empfname = dc.nextLine();
+
+        System.out.println("Enter Emp Id : ");
+        int empid = dc.nextInt();
+
+        System.out.println("Enter Emp Salary : ");
+        int empsalary = dc.nextInt();
+
+
+        Main  k = new Main();
+        k.set(empname,empfname,empid,empsalary);
+        k.Show();
+
+
+
+
+
+
+
+
+    }
+}
+
+=============================================
+16 april()
+
+
+Multilevel inheritance [ assignments ]
+
+class A parent 
+instance variable :normal (a)
+
+class B child 
+instance variable :normal (b)
+
+add()
+sub()
+div()
+multi()
+mod() 
+
+
+class A{
+    int a=4;
+   
+}
+
+class B extends A{
+     int b=4;
+
+    void add(){
+        int c=a+b;;
+        System.out.println(" add: " +c);
+    }
+
+    void sub(){
+        int c=a-b;
+        System.out.println("sub :" +c);
+
+    }
+
+    void div(){
+        int c=a/b;
+        System.out.println("div:" +c);
+    }
+
+    void mult(){
+        int c=a*b;
+        System.out.println("mult:"+c);
+    }
+
+    void mod(){
+        int c=a%b;
+        System.out.println("mod:" +c);
+    }
+
+
+
+
+}
+public class Main{
+    public static void main(String[] args){
+        B p = new B();
+        p.add();
+        p.sub();
+        p.div();
+        p.mult();
+        p.mod();
+
+    }
+}
+
+ 
+-------------------------------
+class A parent 
+instance variable :normal (a) :public 
+
+class B child 
+instance variable :normal (b):public 
+
+add()
+sub()
+div()
+multi()
+mod() 
+
+
+
+
+class A{
+   public int a=4;
+   
+}
+
+class B extends A{
+     public int b=4;
+
+    void add(){
+        int c=a+b;;
+        System.out.println(" add: " +c);
+    }
+
+    void sub(){
+        int c=a-b;
+        System.out.println("sub :" +c);
+
+    }
+
+    void div(){
+        int c=a/b;
+        System.out.println("div:" +c);
+    }
+
+    void mult(){
+        int c=a*b;
+        System.out.println("mult:"+c);
+    }
+
+    void mod(){
+        int c=a%b;
+        System.out.println("mod:" +c);
+    }
+
+
+
+
+}
+public class Main{
+    public static void main(String[] args){
+        B p = new B();
+        p.add();
+        p.sub();
+        p.div();
+        p.mult();
+        p.mod();
+
+    }
+}
+-------------------------------
+class A parent 
+instance variable :normal (a) :private 
+
+class B child 
+instance variable :normal (b):private 
+
+print (a and b print)
+
+Main :access
+
+solution :code also 
+
+
+class A{
+  private int a=4;
+   
+}
+
+class B extends A{
+     private int b=4;
+
+     void show(){
+        System.out.println(a);
+        System.out.println(b);
+
+     }
+
+   
+
+}
+
+
+public class Main{
+    public static void main(String[] args){
+        B p = new B();
+        p.show();
+
+
+    }
+}
+
+
+solution :code also 
+
+
+
+class A{
+  private int a=4;
+  void show(){
+    System.out.println(a);
+    
+
+ }
+   
+}
+
+class B extends A{
+     private int b=4;
+
+     void show1(){
+       
+        System.out.println(b);
+
+     }
+
+   
+
+}
+
+
+public class Main{
+    public static void main(String[] args){
+        B p = new B();
+        p.show();
+        p.show1();
+
+
+    }
+}
+
+
+--------------------------
+class A parent 
+instance variable :normal (a) :private 
+
+class B child 
+instance variable :normal (b):private 
+
+print (a and b print)
+
+Main :access
+
+solution :code also 
+
+
+
+class A{
+  private int a=4;
+   
+}
+
+class B extends A{
+     private int b=4;
+
+     void show(){
+        System.out.println(a);
+        System.out.println(b);
+
+     }
+
+   
+
+}
+
+
+public class Main{
+    public static void main(String[] args){
+        B p = new B();
+        p.show();
+
+
+    }
+}
+
+
+solution :code also 
+
+
+
+class A{
+  private int a=4;
+  void show(){
+    System.out.println(a);
+    
+
+ }
+   
+}
+
+class B extends A{
+     private int b=4;
+
+     void show1(){
+       
+        System.out.println(b);
+
+     }
+
+   
+
+}
+
+
+public class Main{
+    public static void main(String[] args){
+        B p = new B();
+        p.show();
+        p.show1();
+
+
+    }
+}
+
+
+--------------------------
+class A parent 
+instance variable :normal (a) :protected 
+
+class B child 
+instance variable :normal (b):protected 
+
+print (a and b print)
+
+Main :access
+
+
+class A{
+  protected int a=4;
+  void show(){
+    System.out.println(a);
+    
+
+ }
+   
+}
+
+class B extends A{
+    protected int b=4;
+
+     void show1(){
+       
+        System.out.println(b);
+
+     }
+
+   
+
+}
+
+
+public class Main{
+    public static void main(String[] args){
+        B p = new B();
+        p.show();
+        p.show1();
+
+
+    }
+}
+--------------------------
+class A parent 
+instance variable :normal (a) :protected 
+
+class B child 
+instance variable :normal (b):protected 
+
+print (a and b print)
+
+Main :access
+
+
+class A{
+  protected int a=4;
+  void show(){
+    System.out.println(a);
+    
+
+ }
+   
+}
+
+class B extends A{
+    protected int b=4;
+
+     void show1(){
+       
+        System.out.println(b);
+
+     }
+
+   
+
+}
+
+
+public class Main{
+    public static void main(String[] args){
+        B p = new B();
+        p.show();
+        p.show1();
+
+
+    }
+}
+ --------------------------
+class A parent 
+instance variable :normal (a) :private 
+
+class B child 
+instance variable :normal (b):protected 
+print (a and b print)
+
+Main :access
+
+solution :code also 
+
+
+
+
+class A{
+  private int a=4;
+  void show(){
+    System.out.println(a);
+
+ 
+ }
+   
+}
+
+class B extends A{
+    protected int b=4;
+
+     void show1(){
+       
+        System.out.println(b);
+        
+
+     }
+
+   
+
+}
+
+
+public class Main{
+    public static void main(String[] args){
+        B p = new B();
+        p.show();
+        p.show1();
+
+
+    }
+}
+ --------------------------
+class A parent 
+instance variable :normal (a) :protected 
+
+class B child 
+instance variable :normal (b):private 
+print (a and b print)
+
+Main :access
+
+
+class A{
+  protected int a=4;
+  void show(){
+    System.out.println(a);
+    
+
+ }
+   
+}
+
+class B extends A{
+    private int b=4;
+
+     void show1(){
+       
+        System.out.println(b);
+
+     }
+
+   
+
+}
+
+
+public class Main{
+    public static void main(String[] args){
+        B p = new B();
+        p.show();
+        p.show1();
+
+
+    }
+}
+ --------------------------
+class A parent 
+instance variable :normal (a) :public 
+
+class B child 
+instance variable :normal (b):protected 
+print (a and b print)
+
+Main :access
+
+
+class A{
+  public int a=4;
+  void show(){
+    System.out.println(a);
+
+ 
+ }
+   
+}
+
+class B extends A{
+    protected int b=4;
+
+     void show1(){
+       
+        System.out.println(b);
+        
+
+     }
+
+   
+
+}
+
+
+public class Main{
+    public static void main(String[] args){
+        B p = new B();
+        p.show();
+        p.show1();
+
+
+    }
+}
+ --------------------------
+class A parent 
+instance variable :normal (a) :protected 
+
+class B child 
+instance variable :normal (b):public 
+print (a and b print)
+
+Main :access
+
+
+class A{
+  protected int a=4;
+  void show(){
+    System.out.println(a);
+
+ 
+ }
+   
+}
+
+class B extends A{
+    public int b=4;
+
+     void show1(){
+       
+        System.out.println(b);
+        
+
+     }
+
+   
+
+}
+
+
+public class Main{
+    public static void main(String[] args){
+        B p = new B();
+        p.show();
+        p.show1();
+
+
+    }
+}
+=================================================================================
+multilevel inheritance 
+class A
+
+B
+
+C
+
+D
+
+E
+
+F
+
+Main ex F
+
+
+
+
+
+class A{
+  
+  void show(){
+    System.out.println("A class");
+
+ 
+ }
+   
+}
+
+class B extends A{
+    
+
+     void show1(){
+       
+        System.out.println("B class");
+        
+
+     }
+
+   
+
+}
+
+class C extends B{
+    void show2(){
+    System.out.println("C class");
+
+
+    }
+
+}
+
+class D extends C{
+    void show3(){
+    System.out.println("D class");
+    }
+}
+
+class E extends D{
+
+    void show4(){
+    System.out.println("E class");
+
+    }
+} 
+
+
+class F extends E{
+     
+    void show5(){
+        System.out.println("F class");
+    }
+}
+
+public class Main{
+    public static void main(String[] args){
+        F p = new F();
+        p.show();
+        p.show1();
+        p.show2();
+        p.show3();
+        p.show4();
+        p.show5();
+        
+
+
+
+    }
+}
+-------------------------------------------
+class A
+instance variable a
+print 
+
+B
+instance variable b
+
+multi() :a*b
+
+C
+instance variable c
+div() :c/b
+
+D
+instance variable d
+sub() :a-b-c-d;
+
+E
+instance variable e
+add() :a+b+c+d+e
+
+F
+instance variable f
+mod() :a+b*c/d+e-f
+
+Main ex F
+
+instance variable g:print 
+
+
+
+
+class A{
+    int a=2;
+  
+  void show(){
+    System.out.println("Hello Chaman");
+
+ 
+ }
+   
+}
+
+class B extends A{
+    int b=2;
+    
+
+     void show1(){
+
+        int c=a*b;
+       
+        System.out.println("multi of a and b:" +c);
+        
+
+     }
+
+   
+
+}
+
+class C extends B{
+    int c=2;
+    void show2(){
+        int d= b/c;
+    System.out.println("div of c and b:" +d);
+
+
+    }
+
+}
+
+class D extends C{
+    int d=2;
+
+    void show3(){
+        int e=a-b-c-d;
+    System.out.println("sub of a-b-c-d :" +e);
+    }
+}
+
+class E extends D{
+    int e=2;
+
+    void show4(){
+        int f= a+b+c+d;
+    System.out.println("addition of a+b+c+d :" +f);
+
+    }
+} 
+
+
+class F extends E{
+    int f=2;
+     
+    void show5(){
+        int g=a+b*c/d+e-f;
+        System.out.println("mod of a+b*c/d+e-f :" +g);
+    }
+}
+
+public class Main{
+    public static void main(String[] args){
+      
+        F p = new F();
+        p.show();
+        p.show1();
+        p.show2();
+        p.show3();
+        p.show4();
+        p.show5();
+
+        int g;
+        System.out.println("bye chaman");
+
+
+
+
+    }
+}
+-------------------------------------------
+A
+instance variable :private (a)
+
+B
+instance variable :private (b)
+
+C
+instance variable :private (c)
+print (a ,b,c)
+
+Main :
+access 
+
+solution : code 
+
+class A{
+    private int a=2;
+    void show(){
+     
+  
+   
+   }
+     
+  }
+  
+  class B extends A{
+      private int b=2;
+  
+       void show1(){
+         
+          
+          
+  
+       }
+  
+     
+  
+  }
+
+  class C extends B{
+    private int c=2;
+    void show2(){
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+
+    }
+  }
+  
+  
+  public class Main{
+      public static void main(String[] args){
+          C p = new C();
+          p.show();
+          p.show1();
+          p.show2();
+  
+  
+      }
+  }
+  
+  
+  solution : code 
+  
+  
+  class A{
+    private int a=2;
+    void show(){
+        System.out.println(a);
+     
+  
+   
+   }
+     
+  }
+  
+  class B extends A{
+      private int b=2;
+  
+       void show1(){
+      
+        System.out.println(b);
+         
+          
+          
+  
+       }
+  
+     
+  
+  }
+
+  class C extends B{
+    private int c=2;
+    void show2(){
+        
+        System.out.println(c);
+
+    }
+  }
+  
+  
+  public class Main{
+      public static void main(String[] args){
+          C p = new C();
+          p.show();
+          p.show1();
+          p.show2();
+  
+  
+      }
+  }
+-----------------------------------------------------------------
+A
+instance variable :protected (a)
+
+B
+instance variable :protected (b)
+
+C
+instance variable :protected (c)
+print (a ,b,c)
+
+Main :
+access 
+
+solution : code
+
+ 
+class A{
+    protected int a=2;
+    void show(){
+     
+  
+   
+   }
+     
+  }
+  
+  class B extends A{
+      protected int b=2;
+  
+       void show1(){
+         
+          
+          
+  
+       }
+  
+     
+  
+  }
+
+  class C extends B{
+    protected int c=2;
+    void show2(){
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+
+    }
+  }
+  
+  
+  public class Main{
+      public static void main(String[] args){
+          C p = new C();
+          p.show();
+          p.show1();
+          p.show2();
+  
+  
+      }
+  }
+-----------------------------------------------------------------
+A
+instance variable :public (a)
+
+B
+instance variable :public (b)
+
+C
+instance variable :public (c)
+print (a ,b,c)
+
+Main :
+access 
+
+solution : code 
+
+
+
+class A{
+    public int a=2;
+    void show(){
+        System.out.println(a);
+     
+  
+   
+   }
+     
+  }
+  
+  class B extends A{
+      public  int b=2;
+  
+       void show1(){
+      
+        System.out.println(b);
+         
+          
+          
+  
+       }
+  
+     
+  
+  }
+
+  class C extends B{
+    public int c=2;
+    void show2(){
+        
+        System.out.println(c);
+
+    }
+  }
+  
+  
+  public class Main{
+      public static void main(String[] args){
+          C p = new C();
+          p.show();
+          p.show1();
+          p.show2();
+  
+  
+      }
+  }
+-----------------------------------------------------------------
+A
+instance variable :private (a)
+
+B
+instance variable :public (b)
+
+C
+instance variable :protected (c)
+print (a ,b,c)
+
+Main :
+access 
+
+
+
+class A{
+    private int a=2;
+    void show(){
+        
+     
+  
+   
+   }
+     
+  }
+  
+  class B extends A{
+      public  int b=2;
+  
+       void show1(){
+      
+        
+         
+          
+          
+  
+       }
+  
+     
+  
+  }
+
+  class C extends B{
+    protected int c=2;
+    void show2(){
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+
+    }
+  }
+  
+  
+  public class Main{
+      public static void main(String[] args){
+          C p = new C();
+          p.show();
+          p.show1();
+          p.show2();
+  
+  
+      }
+  }
+
+solution : code 
+
+
+class A{
+    private int a=2;
+    void show(){
+        System.out.println(a);
+     
+  
+   
+   }
+     
+  }
+  
+  class B extends A{
+      public  int b=2;
+  
+       void show1(){
+      
+        System.out.println(b);
+         
+          
+          
+  
+       }
+  
+     
+  
+  }
+
+  class C extends B{
+    protected int c=2;
+    void show2(){
+        
+        System.out.println(c);
+
+    }
+  }
+  
+  
+  public class Main{
+      public static void main(String[] args){
+          C p = new C();
+          p.show();
+          p.show1();
+          p.show2();
+  
+  
+      }
+  }
+
+-----------------------------------------------------------------
+A
+instance variable :protected (a)
+
+B
+instance variable :private (b)
+
+C
+instance variable :public (c)
+print (a ,b,c)
+
+Main :
+access 
+
+
+
+
+class A{
+    protected int a=2;
+    void show(){
+       
+     
+  
+   
+   }
+     
+  }
+  
+  class B extends A{
+      private  int b=2;
+  
+       void show1(){
+      
+       
+         
+          
+          
+  
+       }
+  
+     
+  
+  }
+
+  class C extends B{
+    public int c=2;
+    void show2(){
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+
+    }
+  }
+  
+  
+  public class Main{
+      public static void main(String[] args){
+          C p = new C();
+          p.show();
+          p.show1();
+          p.show2();
+  
+  
+      }
+  }
+
+solution : code 
+
+
+class A{
+    protected int a=2;
+    void show(){
+        System.out.println(a);
+     
+  
+   
+   }
+     
+  }
+  
+  class B extends A{
+      private  int b=2;
+  
+       void show1(){
+      
+        System.out.println(b);
+         
+          
+          
+  
+       }
+  
+     
+  
+  }
+
+  class C extends B{
+    public int c=2;
+    void show2(){
+        
+        System.out.println(c);
+
+    }
+  }
+  
+  
+  public class Main{
+      public static void main(String[] args){
+          C p = new C();
+          p.show();
+          p.show1();
+          p.show2();
+  
+  
+      }
+  }
+-----------------------------------------------------------------
+A
+instance variable :public (a)
+
+B
+instance variable :protected (b)
+
+C
+instance variable :private (c)
+print (a ,b,c)
+
+Main :
+access 
+
+solution : code 
+
+
+class A{
+    public int a=2;
+    void show(){
+        System.out.println(a);
+     
+  
+   
+   }
+     
+  }
+  
+  class B extends A{
+      protected  int b=2;
+  
+       void show1(){
+      
+        System.out.println(b);
+         
+          
+          
+  
+       }
+  
+     
+  
+  }
+
+  class C extends B{
+    private int c=2;
+    void show2(){
+        
+        System.out.println(c);
+
+    }
+  }
+  
+  
+  public class Main{
+      public static void main(String[] args){
+          C p = new C();
+          p.show();
+          p.show1();
+          p.show2();
+  
+  
+      }
+  }
+----------------------------------------------------
+22 april
+
+
+user input :
+----------------------------------------------------------
+class A :
+constructor overload 
+
+class B
+constructor overload 
+
+class Main 
+constructor overload 
+
+
+import java.util.Scanner;
+
+class A{
+    A(){
+
+    }
+    A(){
+
+    }
+}
+
+
+class B{
+    B(){
+
+    }
+    B(){
+
+    }
+
+}
+
+public class Main{
+Main(){
+
+}
+Main(){
+    
+}
+    public static void main(String[] args){
+
+    }
+}
+
+------------------------------------------------------------------
+class A :
+constructor overload 
+
+class B
+constructor overload 
+
+class Main 
+constructor overload 
+
+solution 
+
+
+import java.util.Scanner;
+
+class A{
+    A(int a){
+        System.out.println("the value of a" +a);
+
+    }
+    A(char a){
+        System.out.println("defalu value");
+
+    }
+}
+
+
+class B{
+    B( float b){
+        System.out.println("the value of b is " + b);
+
+    }
+    B(int b){
+        System.out.println("the value of b is " +b);
+
+    }
+
+}
+
+public class Main{
+Main(int Main){
+
+
+
+}
+Main( ){
+
+}
+    public static void main(String[] args){
+       
+        
+
+    }
+}
+------------------------------------------------------------------
+constructor chaining :
+
+class A :
+A():int
+A():int ,int :through 
+A():float
+A():float,float
+A():string
+A(): 
+
+
+class B
+B():string
+B():string ,string
+B():float
+B():char :through chaining 
+B():int
+B():double
+
+class Main 
+Main() :string 
+Main():long
+Main():double
+Main():
+Main():int ,int 
+Main():int float :through chaining 
+
+-----------------------------------------------------------------------
+class A
+constructor :overload :solve problem 
+show1() :convariant return type 
+
+class B
+show2():getter and setter :addition 
+
+class C
+show3():return and argument 
+
+class Main 
+constructor :overload :solve problem 
+show4():return and no argument 
+-----------------------------------------------------------------------
+Main class
+method overload :main method 
+-----------------------------------------------------------------------
+single level : 
+multilevel :
+heirarichal : 
+class A
+
+class B ex A 
+
+overiding 
+-----------------------------------------------------------------------
+25 april
+
+
+
+user input :
+-----------------------------------------------------------------------------
+class Mahindra :abs 
+
+method :tyre :abs
+break1() : abs
+break2() :abs
+
+Thar : ex Mah
+
+Main class :access
+
+
+
+
+import java.util.*;
+
+abstract class Mahindra {
+    abstract void tyre();
+    abstract void break1();
+    abstract void break2();
+
+
+}
+
+
+class Thar extends Mahindra{
+    void tyre(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("enter the number or tyre: ");
+        int tyre = pc.nextInt();
+        System.out.println("the value of tyre is :" +tyre);
+
+    }
+    void break1(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("enter the number or break1: ");
+        int break1 = pc.nextInt();
+        System.out.println("the value of break1 is :" + break1);
+        
+    }
+    void break2(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("enter the number or break2: ");
+        int break2 = pc.nextInt();
+        System.out.println("the value of break2 is :" + break2);
+
+    }
+
+
+
+}
+public class Ma{
+    public static void main(String[] args) {
+        Thar P=new Thar();
+        P.tyre();
+        P.break1();
+        P.break2();
+
+        
+    }
+}
+ 
+-------------------------------------------------------------------------
+Mahindra :absr
+
+engine()
+petrol():
+seat() :
+gear() :
+
+Thar ex Mahin
+
+Honda ex Mahi 
+
+Hero ex Mahi
+
+Main ex Main 
+
+main method :access
+
+
+
+import java.util.*;
+
+abstract class Mahindra {
+    abstract void engine();
+    abstract void petrol();
+    abstract void seat();
+    abstract void gear();
+
+
+}
+class Thar extends Mahindra{
+    void engine(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available engine");
+        int engine=pc.nextInt();
+        System.out.println("tha engine is :" +engine);
+    
+
+    }
+    void petrol(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available petrol");
+        int petrol=sc.nextInt();
+        System.out.println("tha petrol is :" +petrol);
+    
+
+    }
+    void seat(){
+        Scanner ac=new Scanner(System.in);
+        System.out.println("available seat");
+        int seat2=ac.nextInt();
+        System.out.println("tha seat is :" +seat2);
+    
+
+    }
+    void gear(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available gear");
+        int gear1=dc.nextInt();
+        System.out.println("tha gear is :" +gear1);
+    
+
+    }
+
+}
+class Honda extends Mahindra{
+    void engine(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available engine");
+        int engine=pc.nextInt();
+        System.out.println("tha engine is :" +engine);
+    
+
+    }
+    void petrol(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available petrol");
+        int petrol=sc.nextInt();
+        System.out.println("tha petrol is :" +petrol);
+    
+
+    }
+    void seat(){
+        Scanner ac=new Scanner(System.in);
+        System.out.println("available seat");
+        int seat2=ac.nextInt();
+        System.out.println("tha seat is :" +seat2);
+    
+
+    }
+    void gear(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available gear");
+        int gear1=dc.nextInt();
+        System.out.println("tha gear is :" +gear1);
+    
+
+    }
+
+} 
+class Hero extends Mahindra{
+    void engine(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available engine");
+        int engine=pc.nextInt();
+        System.out.println("tha engine is :" +engine);
+    
+
+    }
+    void petrol(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available petrol");
+        int petrol=sc.nextInt();
+        System.out.println("tha petrol is :" +petrol);
+    
+
+    }
+    void seat(){
+        Scanner ac=new Scanner(System.in);
+        System.out.println("available seat");
+        int seat2=ac.nextInt();
+        System.out.println("tha seat is :" +seat2);
+    
+
+    }
+    void gear(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available gear");
+        int gear1=dc.nextInt();
+        System.out.println("tha gear is :" +gear1);
+    
+
+    }
+
+}
+
+
+
+public class Main extends Mahindra{
+
+    void engine(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available engine");
+        int engine=pc.nextInt();
+        System.out.println("tha engine is :" +engine);
+    
+
+    }
+    void petrol(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available petrol");
+        int petrol=sc.nextInt();
+        System.out.println("tha petrol is :" +petrol);
+    
+
+    }
+    void seat(){
+        Scanner ac=new Scanner(System.in);
+        System.out.println("available seat");
+        int seat2=ac.nextInt();
+        System.out.println("tha seat is :" +seat2);
+    
+
+    }
+    void gear(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available gear");
+        int gear1=dc.nextInt();
+        System.out.println("tha gear is :" +gear1);
+    
+
+    }
+    public static void main(String[] args) {
+        Thar p=new Thar();
+        p.engine();
+        p.petrol();
+        p.seat();
+        p.gear();
+
+        Honda p1 =new Honda();
+        p1.engine();
+        p1.petrol();
+        p1.seat();
+        p1.gear();
+
+        Hero p2 =new Hero();
+        p2.engine();
+        p2.petrol();
+        p2.seat();
+        p2.gear();
+
+        Main p3= new Main();
+        p3.engine();
+        p3.petrol();
+        p3.seat();
+        p3.gear();
+
+
+
+
+
+
+
+    }
+}
+-------------------------------------------------------------------------
+Mahindra :absr
+logo() 
+mirror()
+ac()
+airbag()
+
+Thar ex Mahin
+method 
+
+Honda ex Thar 
+method 
+
+Hero ex Honda
+method 
+
+Main ex Hero 
+method 
+
+main method :access
+child k through access 
+
+solve this problem 
+check :
+
+
+
+this is error code :
+
+
+import java.util.*;
+
+abstract class Mahindra {
+    abstract void logo();
+    abstract void mirror();
+    abstract void ac();
+    abstract void airbags();
+
+
+}
+class Thar extends Mahindra{
+    void logo(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirror(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void ac(){
+        Scanner ac=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac2=ac.nextInt();
+        System.out.println("tha ac is :" +ac);
+    
+
+    }
+    void airbags(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbags");
+        int airbags=dc.nextInt();
+        System.out.println("tha airbags is :" +airbags);
+    
+
+    }
+    void method(){
+        System.out.println("Thar");
+    }
+
+}
+class Honda extends Thar{
+    void logo(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirror(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void ac(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac =pc.nextInt();
+        System.out.println("tha ac is :" +ac);
+    
+
+    }
+    void airbags(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbags");
+        int airbags=dc.nextInt();
+        System.out.println("tha airbags is :" +airbags);
+    
+
+    }
+    void method(){
+        System.out.println("Honda");
+    }
+
+} 
+class Hero extends Honda{
+    void logo(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirror(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void ac(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac=pc.nextInt();
+        System.out.println("tha seat is :" +ac);
+    
+
+    }
+    void airbgs(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbgs");
+        int airbgs=dc.nextInt();
+        System.out.println("tha airbgs is :" +airbgs);
+    
+
+    }
+    void method(){
+        System.out.println("Hero");
+    }
+
+}
+
+
+
+public class Main extends Hero{
+
+    void logo(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirror(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void ac(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac=pc.nextInt();
+        System.out.println("tha ac is :" +ac);
+    
+
+    }
+    void airbgs(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbgs");
+        int airbgs=dc.nextInt();
+        System.out.println("tha airbgs is :" +airbgs);
+        
+        }
+        void method(){
+            System.out.println("Honda");
+        }
+    
+
+    
+
+
+    public static void main(String[] args) {
+        Main k=new Main();
+        k.mirror();
+        k.logo();
+        k.ac();
+        k.airbags();
+
+      
+
+
+
+    }
+}
+
+
+
+solution code
+
+
+import java.util.*;
+
+abstract class Mahindra {
+    abstract void logo();
+    abstract void mirror();
+    abstract void ac();
+    abstract void airbags();
+
+
+}
+class Thar extends Mahindra{
+    void logo(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirror(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void ac(){
+        Scanner ac=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac2=ac.nextInt();
+        System.out.println("tha ac is :" +ac);
+    
+
+    }
+    void airbags(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbags");
+        int airbags=dc.nextInt();
+        System.out.println("tha airbags is :" +airbags);
+    
+
+    }
+    void method(){
+        System.out.println("Thar");
+    }
+
+}
+class Honda extends Thar{
+    void logoo(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirrorr(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void acc(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac =pc.nextInt();
+        System.out.println("tha ac is :" +ac);
+    
+
+    }
+    void airbagss(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbags");
+        int airbags=dc.nextInt();
+        System.out.println("tha airbags is :" +airbags);
+    
+
+    }
+    void methodd(){
+        System.out.println("Honda");
+    }
+
+} 
+class Hero extends Honda{
+    void logo1(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirror1(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void ac1(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac=pc.nextInt();
+        System.out.println("tha seat is :" +ac);
+    
+
+    }
+    void airbags1(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbgs");
+        int airbgs=dc.nextInt();
+        System.out.println("tha airbgs is :" +airbgs);
+    
+
+    }
+    void method1(){
+        System.out.println("Hero");
+    }
+
+}
+
+
+
+public class Main extends Hero{
+
+    void logo2(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirror2(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void ac2(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac=pc.nextInt();
+        System.out.println("tha ac is :" +ac);
+    
+
+    }
+    void airbags2(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbgs");
+        int airbgs=dc.nextInt();
+        System.out.println("tha airbgs is :" +airbgs);
+        
+        }
+        void method2(){
+            System.out.println("Honda");
+        }
+    
+
+    
+
+
+    public static void main(String[] args) {
+        Main k=new Main();
+        k.mirror();
+        k.logo();
+        k.ac();
+        k.airbags();
+        k.method();
+        k.mirrorr();
+        k.logoo();
+        k.acc();
+        k.airbagss();
+        k.methodd();
+        k.mirror1();
+        k.logo1();
+        k.ac1();
+        k.airbags1();
+        k.method1();
+        k.mirror2();
+        k.logo2();
+        k.ac2();
+        k.airbags2();
+        k.method2();
+
+
+
+    }
+}
+
+
+-------------------------------------------------------------------------
+Mahindra :absr
+logo() 
+mirror()
+ac()
+airbag()
+
+Thar ex Mahin
+method1 
+
+Honda ex Thar 
+method 2
+
+Hero ex Honda
+method3 
+
+Main ex Hero 
+method 4
+
+main method :access
+child k through access 
+
+
+this is the error code
+
+
+
+import java.util.*;
+
+abstract class Mahindra {
+    abstract void logo();
+    abstract void mirror();
+    abstract void ac();
+    abstract void airbags();
+
+
+}
+class Thar extends Mahindra{
+    void logo(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirror(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void ac(){
+        Scanner ac=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac2=ac.nextInt();
+        System.out.println("tha ac is :" +ac);
+    
+
+    }
+    void airbags(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbags");
+        int airbags=dc.nextInt();
+        System.out.println("tha airbags is :" +airbags);
+    
+
+    }
+    void method1(){
+        System.out.println("Thar");
+    }
+
+}
+class Honda extends Thar{
+    void logoo(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirrorr(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void acc(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac =pc.nextInt();
+        System.out.println("tha ac is :" +ac);
+    
+
+    }
+    void airbagss(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbags");
+        int airbags=dc.nextInt();
+        System.out.println("tha airbags is :" +airbags);
+    
+
+    }
+    void method2(){
+        System.out.println("Honda");
+    }
+
+} 
+class Hero extends Honda{
+    void logo1(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirror1(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void ac1(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac=pc.nextInt();
+        System.out.println("tha seat is :" +ac);
+    
+
+    }
+    void airbags1(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbgs");
+        int airbgs=dc.nextInt();
+        System.out.println("tha airbgs is :" +airbgs);
+    
+
+    }
+    void method3(){
+        System.out.println("Hero");
+    }
+
+}
+
+
+
+public class Main extends Hero{
+
+    void logo2(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirror2(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void ac2(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac=pc.nextInt();
+        System.out.println("tha ac is :" +ac);
+    
+
+    }
+    void airbags2(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbgs");
+        int airbgs=dc.nextInt();
+        System.out.println("tha airbgs is :" +airbgs);
+        
+        }
+        void method4(){
+            System.out.println("Honda");
+        }
+    
+
+    
+
+
+    public static void main(String[] args) {
+        Main k=new Main();
+        k.mirror();
+        k.logo();
+        k.ac();
+        k.airbags();
+        k.method1();
+        
+
+
+    }
+}
+
+
+solve this problem 
+
+
+
+
+import java.util.*;
+
+abstract class Mahindra {
+    abstract void logo();
+    abstract void mirror();
+    abstract void ac();
+    abstract void airbags();
+
+
+}
+class Thar extends Mahindra{
+    void logo(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirror(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void ac(){
+        Scanner ac=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac2=ac.nextInt();
+        System.out.println("tha ac is :" +ac);
+    
+
+    }
+    void airbags(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbags");
+        int airbags=dc.nextInt();
+        System.out.println("tha airbags is :" +airbags);
+    
+
+    }
+    void method1(){
+        System.out.println("Thar");
+    }
+
+}
+class Honda extends Thar{
+    void logoo(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirrorr(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void acc(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac =pc.nextInt();
+        System.out.println("tha ac is :" +ac);
+    
+
+    }
+    void airbagss(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbags");
+        int airbags=dc.nextInt();
+        System.out.println("tha airbags is :" +airbags);
+    
+
+    }
+    void method2(){
+        System.out.println("Honda");
+    }
+
+} 
+class Hero extends Honda{
+    void logo1(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirror1(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void ac1(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac=pc.nextInt();
+        System.out.println("tha seat is :" +ac);
+    
+
+    }
+    void airbags1(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbgs");
+        int airbgs=dc.nextInt();
+        System.out.println("tha airbgs is :" +airbgs);
+    
+
+    }
+    void method3(){
+        System.out.println("Hero");
+    }
+
+}
+
+
+
+public class Main extends Hero{
+
+    void logo2(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available logo");
+        int logo=pc.nextInt();
+        System.out.println("tha logo is :" +logo);
+    
+
+    }
+    void mirror2(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("available mirror");
+        int mirror=sc.nextInt();
+        System.out.println("tha mirror is :" +mirror);
+    
+
+    }
+    void ac2(){
+        Scanner pc=new Scanner(System.in);
+        System.out.println("available ac");
+        int ac=pc.nextInt();
+        System.out.println("tha ac is :" +ac);
+    
+
+    }
+    void airbags2(){
+        Scanner dc=new Scanner(System.in);
+        System.out.println("available airbgs");
+        int airbgs=dc.nextInt();
+        System.out.println("tha airbgs is :" +airbgs);
+        
+        }
+        void method4(){
+            System.out.println("Honda");
+        }
+    
+
+    
+
+
+    public static void main(String[] args) {
+        Main k=new Main();
+        k.mirror();
+        k.logo();
+        k.ac();
+        k.airbags();
+        k.method1();
+        k.mirrorr();
+        k.logoo();
+        k.acc();
+        k.airbagss();
+        k.method2();
+        k.mirror1();
+        k.logo1();
+        k.ac1();
+        k.airbags1();
+        k.method1();
+        k.mirror2();
+        k.logo2();
+        k.ac2();
+        k.airbags2();
+        k.method4();
+
+
+
+    }
+}
