@@ -11,7 +11,7 @@
 
     }
     
-}*/
+}
 
 public class Firstm{
     void add(){
@@ -64,9 +64,56 @@ public class Firstm{
         k4.sub();
         Firstm k5=new Firstm();
         k5.mod();
-        
+
         
 
+
+    }
+}*/
+
+class A{
+    void add(){
+        int a=3;
+        int b=7;
+        int c=a+b;
+        System.out.println(c);
+    }
+
+    void div(){
+        int a=5;
+        int b=25;
+        int c=a/b;
+        System.out.println(c);
+
+    }
+    void multi(){
+        int a=9;
+        int b=7;
+        int c=a*b;
+        System.out.println(c);
+    }
+
+    void sub(){
+        int a=8;
+        int b=3;
+        int c=a-b;
+        System.out.println(c);
+    }
+    void mod(){
+        int a=20;
+        int b=5;
+        int c=a%b;
+        System.out.println(c);
+    }
+}
+public class Firstm{
+    public static void main(String[] args){
+        A p=new A();
+        p.add();
+        p.div();
+        p.multi();
+        p.sub();
+        p.mod();
 
     }
 }
