@@ -1,4 +1,4 @@
-public class FindingMaximumElement2DArray {
+public class FindingMaximumElement {
 
         public static void main(String[] args) {
             int[][] arr = {
