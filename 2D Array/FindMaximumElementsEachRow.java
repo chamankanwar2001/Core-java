@@ -1,4 +1,4 @@
-public class FindMaximumMinimumElementsEachRow {
+public class FindMaximumElementsEachRow {
    
         public static void main(String[] args) {
             int[][] arr = {
