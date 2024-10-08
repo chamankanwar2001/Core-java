@@ -1,0 +1,434 @@
+1: Sum of Elements in 2D Array
+ {1, 2, 3},
+ {4, 5, 6},
+ {7, 8, 9}
+sum =>45
+
+public class SumOfElements2DArray {
+    
+        public static void main(String[] args) {
+            int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+            int sum = 0;
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr[i].length; j++) {
+                    sum += arr[i][j];
+                }
+            }
+            System.out.println("Sum of all elements: " + sum);
+        }
+    
+    
+}
+    
+     
+---------------------------------------------------------------------
+2) Finding Maximum Element
+ {12, 45, 67},
+            {23, 9, 13},
+            {56, 34, 21}
+
+67 is max 
+
+
+public class FindingMaximumElement {
+
+        public static void main(String[] args) {
+            int[][] arr = {
+                {12, 45, 67},
+                {23, 9, 13},
+                {56, 34, 21}
+            };
+            int max = arr[0][0];
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr[i].length; j++) {
+                    if (arr[i][j] > max) {
+                        max = arr[i][j];
+                    }
+                }
+            }
+            System.out.println("Maximum element: " + max);
+        }
+    }
+    
+
+4) Calculate the sum of each row in a 2D array.
+
+  {1, 2, 3}=6
+{4, 5, 6}=15
+{7, 8, 9}=24
+
+
+public class SumOfEachRow2DArray {
+        public static void main(String[] args) {
+            int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+            for (int i = 0; i < arr.length; i++) {
+                int rowSum = 0;
+                for (int j = 0; j < arr[i].length; j++) {
+                    rowSum += arr[i][j];
+                }
+                System.out.println("Sum of row " + (i+1) + ": " + rowSum);
+            }
+        }
+    }
+    
+
+5) Calculate the sum of each column in a 2D array.
+
+{1, 2, 3},=12
+{4, 5, 6},=15
+  {7, 8, 9}=18
+
+
+public class SumOfEachColumn2DArray {
+        public static void main(String[] args) {
+            int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+            for (int j = 0; j < arr[0].length; j++) {
+                int colSum = 0;
+                for (int i = 0; i < arr.length; i++) {
+                    colSum += arr[i][j];
+                }
+                System.out.println("Sum of column " + (j+1) + ": " + colSum);
+            }
+        }
+    }
+    
+    
+
+
+7)
+type 1:Find the largest row sum in a 2D array.
+
+
+public class FindLargestRowSum {
+        public static void main(String[] args) {
+            int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+            int maxSum = Integer.MIN_VALUE;
+            for (int i = 0; i < arr.length; i++) {
+                int rowSum = 0;
+                for (int j = 0; j < arr[i].length; j++) {
+                    rowSum += arr[i][j];
+                }
+                if (rowSum > maxSum) {
+                    maxSum = rowSum;
+                }
+            }
+            System.out.println("Largest row sum: " + maxSum);
+        }
+    }
+    
+	
+	
+type2:Find the smallest row sum in a 2D array.
+
+
+public class FindSmallestRowSum {
+        public static void main(String[] args) {
+            int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+            int minSum = Integer.MAX_VALUE;
+            for (int i = 0; i < arr.length; i++) {
+                int rowSum = 0;
+                for (int j = 0; j < arr[i].length; j++) {
+                    rowSum += arr[i][j];
+                }
+                if (rowSum < minSum) {
+                    minSum = rowSum;
+                }
+            }
+            System.out.println("Smallest row sum: " + minSum);
+        }
+    }
+	
+	
+8)Find the smallest element in a 2D array.
+
+9)Find the frequency of a specific element in a 2D array.
+
+import java.util.Scanner;
+public class FindFrequencyOfSpecificElement {
+    public static void main(String[] args) {
+        int[][] arr = {
+            {1, 2, 3},
+            {4, 2, 6},
+            {7, 8, 2}
+        };
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the element to find frequency: ");
+        int target = sc.nextInt();
+        int count = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] == target) {
+                    count++;
+                }
+            }
+        }
+        System.out.println("Frequency of " + target + ": " + count);
+    }
+}
+
+
+
+10)
+type1: Find the maximum element in each row of a 2D array.
+
+public class FindMaximumElementsEachRow {
+   
+        public static void main(String[] args) {
+            int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+    
+            for (int i = 0; i < arr.length; i++) {
+                int max = arr[i][0];
+                for (int j = 1; j < arr[i].length; j++) {
+                    if (arr[i][j] > max) {
+                        max = arr[i][j];
+                    }
+                }
+                System.out.println("Max element in row " + (i + 1) + ": " + max);
+            }
+        }
+    }
+	
+type2:Find the minimum element in each row of a 2D array.
+
+public class FindMinimumElementEachRow {
+        public static void main(String[] args) {
+            int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+    
+            for (int i = 0; i < arr.length; i++) {
+                int min = arr[i][0];
+                for (int j = 1; j < arr[i].length; j++) {
+                    if (arr[i][j] < min) {
+                        min = arr[i][j];
+                    }
+                }
+                System.out.println("Min element in row " + (i + 1) + ": " + min);
+            }
+        }
+    }
+    
+	
+
+11)Find the minimum element in each column of a 2D array.
+
+public class FindMinimumElementEachColumn {
+        public static void main(String[] args) {
+            int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+    
+            for (int j = 0; j < arr[0].length; j++) {
+                int min = arr[0][j];
+                for (int i = 1; i < arr.length; i++) {
+                    if (arr[i][j] < min) {
+                        min = arr[i][j];
+                    }
+                }
+                System.out.println("Min element in column " + (j + 1) + ": " + min);
+            }
+        }
+    }
+	
+
+12)Find the sum of elements in the border of a matrix (outermost elements).
+
+public class FindSumOfElementBorder {
+
+        public static void main(String[] args) {
+            int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+    
+            int sum = 0;
+            int rows = arr.length;
+            int cols = arr[0].length;
+    
+            for (int j = 0; j < cols; j++) {
+                sum += arr[0][j]; 
+                sum += arr[rows - 1][j]; 
+            }
+    
+            for (int i = 1; i < rows - 1; i++) {
+                sum += arr[i][0]; 
+                sum += arr[i][cols - 1]; 
+            }
+    
+            System.out.println("Sum of border elements: " + sum);
+        }
+    }
+    
+    
+	
+
+13)Find the average of all elements in a 2D array.
+
+public class FindAverageOfAllElements {
+        public static void main(String[] args) {
+            int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+    
+            int sum = 0;
+            int count = 0;
+    
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr[i].length; j++) {
+                    sum += arr[i][j];
+                    count++;
+                }
+            }
+    
+            double avg = (double) sum / count;
+            System.out.println("Average of all elements: " + avg);
+        }
+    }
+    
+	
+
+14)Find the largest element in each column of a 2D array.
+
+public class FindLargestElementEachColumn {
+        public static void main(String[] args) {
+            int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+    
+            for (int j = 0; j < arr[0].length; j++) {
+                int max = arr[0][j];
+                for (int i = 1; i < arr.length; i++) {
+                    if (arr[i][j] > max) {
+                        max = arr[i][j];
+                    }
+                }
+                System.out.println("Max element in column " + (j + 1) + ": " + max);
+            }
+        }
+    }
+    
+
+15)
+type1:Find the largest element in each column of a 2D array write index ? 
+
+public class FindLargestElementEachColumnWithIndex {
+        public static void main(String[] args) {
+            int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+    
+            for (int j = 0; j < arr[0].length; j++) {
+                int max = arr[0][j];
+                int rowIndex = 0;
+                for (int i = 1; i < arr.length; i++) {
+                    if (arr[i][j] > max) {
+                        max = arr[i][j];
+                        rowIndex = i;
+                    }
+                }
+                System.out.println("Max element in column " + (j + 1) + ": " + max + " at index (" + rowIndex + ", " + j + ")");
+            }
+        }
+		
+
+
+
+18)check a 1 Darray is pallindrome or not 
+
+
+import java.util.Scanner;
+public class Check1DArrayPalindrome {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        boolean isPalindrome = true;
+        for (int i = 0; i < n / 2; i++) {
+            if (arr[i] != arr[n - i - 1]) {
+                isPalindrome = false;
+                break;
+            }
+        }
+
+        if (isPalindrome) {
+            System.out.println("The array is a palindrome.");
+        } else {
+            System.out.println("The array is not a palindrome.");
+        }
+    }
+}
+
+
+20)
+normal loop: 
+Given a number n. find the sum of natural numbers till n th with alterate signs. 
+
+
+import java.util.Scanner;
+public class SumOfNaturalNumbersAlternate {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number N: ");
+        int n = sc.nextInt();
+        
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                sum += i;  
+            } else {
+                sum -= i; 
+            }
+        }
+
+        System.out.println("Sum of natural numbers till " + n + " with alternate signs: " + sum);
+    }
+}
+
+
+
+
+
