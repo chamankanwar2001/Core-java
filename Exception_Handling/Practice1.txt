@@ -1,0 +1,160 @@
+1:
+Create a Java program that uses the throws keyword to declare an exception being thrown from a method and handle it in the calling code.public class ThrowsKeywordExample {
+    public static void main(String[] args) {
+        try {
+            divide(10, 0); 
+        } catch (ArithmeticException e) {
+            System.out.println("Caught an exception in main: " + e.getMessage());
+        }
+    }
+
+    public static void divide(int a, int b) throws ArithmeticException {
+        if (b == 0) {
+            throw new ArithmeticException("Division by zero is not allowed.");
+        }
+        System.out.println("Result: " + (a / b));
+    }
+}
+
+
+
+-----------------------------------------------------------------------
+*************************************************************************************************************8
+		MODERATE LEVEL 
+1:
+Write a Java program that reads an integer from the user and handles the InputMismatchException when the user enters a non-integer input
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class InputMismatchExceptionExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        try {
+            System.out.print("Enter an integer: ");
+            int number = scanner.nextInt();
+            System.out.println("You entered: " + number);
+        } catch (InputMismatchException e) {
+            System.out.println("Invalid input. Please enter an integer.");
+        } finally {
+            scanner.close();
+        }
+    }
+}
+.
+----------------------------------------------------------------
+2:
+Create a Java program that simulates a scenario where an IOException occurs while working with a file and handles it using a custom exception.
+
+import java.io.IOException;
+
+class FileProcessingException extends Exception {
+    public FileProcessingException(String message) {
+        super(message);
+    }
+}
+
+public class CustomIOExceptionExample {
+    public static void main(String[] args) {
+        try {
+            simulateFileOperation();
+        } catch (FileProcessingException e) {
+            System.out.println("Caught custom exception: " + e.getMessage());
+        }
+    }
+
+    public static void simulateFileOperation() throws FileProcessingException {
+        try {
+            throw new IOException("File operation failed.");
+        } catch (IOException e) {
+            throw new FileProcessingException("Custom Exception: Unable to process file.");
+        }
+    }
+}
+
+---------------------------------------
+3:
+Create a Java program that defines a method to divide two numbers and handle ArithmeticException. Then, invoke this method and handle the exception in the calling code.
+
+public class ArithmeticExceptionHandlingExample {
+    public static void main(String[] args) {
+        try {
+            int result = divide(10, 0);
+            System.out.println("Result: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Caught ArithmeticException in main: " + e.getMessage());
+        }
+    }
+
+    public static int divide(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException("Cannot divide by zero.");
+        }
+        return a / b;
+    }
+}
+
+
+-----------------------------------------------------
+4:
+Write a Java program that demonstrates the use of the try-catch-finally construct for exception handling. The program should read a file and print its content, and then close the file in the finally block.
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class TryCatchFinallyExample {
+    public static void main(String[] args) {
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader("example.txt"));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            System.out.println("Error reading file: " + e.getMessage());
+        } finally {
+            try {
+                if (reader != null) {
+                    reader.close();
+                    System.out.println("File closed.");
+                }
+            } catch (IOException e) {
+                System.out.println("Error closing file: " + e.getMessage());
+            }
+        }
+    }
+}
+
+
+------------------------------------------------------------------------------------
+5:
+Create a Java program that defines a custom unchecked exception. Use this exception to handle a specific situation in the program.
+
+
+class InsufficientFundsException extends RuntimeException {
+    public InsufficientFundsException(String message) {
+        super(message);
+    }
+}
+
+public class CustomUncheckedExceptionExample {
+    public static void main(String[] args) {
+        double balance = 500.00;
+        double withdrawAmount = 600.00;
+
+        try {
+            withdraw(balance, withdrawAmount);
+        } catch (InsufficientFundsException e) {
+            System.out.println("Caught custom unchecked exception: " + e.getMessage());
+        }
+    }
+
+    public static void withdraw(double balance, double amount) {
+        if (amount > balance) {
+            throw new InsufficientFundsException("Insufficient funds for withdrawal.");
+        }
+        System.out.println("Withdrawal successful. Remaining balance: " + (balance - amount));
+    }
+}
