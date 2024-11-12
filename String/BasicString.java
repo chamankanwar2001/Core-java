@@ -1,7 +1,7 @@
-public class BasicString {
+public class BasicString{
     public static void main(String[] args){
-        String name = " Regex is  a programming language";
+        String name ="My name is chaman kanwar";
         System.out.println(name);
+
     }
-    
 }
