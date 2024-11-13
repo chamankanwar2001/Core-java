@@ -2,7 +2,7 @@
 import java.io.*;
 import java.util.*;
 
-public class DemonstratingAllCases {
+public class ExceptionOverridingCases {
     public static void main(String[] args) {
         // 1. ArithmeticException (Division by zero)
         try {
