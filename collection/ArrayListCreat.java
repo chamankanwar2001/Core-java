@@ -8,6 +8,7 @@ public class ArrayListCreat {
         al.add('c');
 
         System.out.println(al);
+        System.out.println(al.add("hii"));
 
     }
     
